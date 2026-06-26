@@ -13,123 +13,212 @@
 
     <!-- NAVIGATION MENU -->
     <nav class="bg-white border-b border-gray-100 shadow-sm sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-            <div class="flex items-center gap-2 font-bold text-xl text-gray-900 tracking-wider">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-2 font-bold text-lg sm:text-xl text-gray-900 tracking-wider">
                 <i class="fa-solid fa-seedling text-orange-500"></i>
                 <span>NYANYUKA AFRIKA</span>
             </div>
-            <div class="hidden lg:flex items-center gap-6 text-sm font-medium text-gray-600">
+            <!-- Links za Juu -->
+            <div class="hidden lg:flex items-center gap-5 text-xs font-semibold text-gray-600 uppercase tracking-wider">
                 <a href="#home" class="hover:text-orange-500 transition">Home</a>
                 <a href="#about" class="hover:text-orange-500 transition">About Us</a>
+                <a href="#vision" class="hover:text-orange-500 transition">Vision & Mission</a>
                 <a href="#projects" class="hover:text-orange-500 transition">Our Projects</a>
                 <a href="#contact" class="hover:text-orange-500 transition">Contact Us</a>
-                <a href="#donate" class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded-lg transition shadow-sm flex items-center gap-2">
+                <a href="#donate" class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded-lg transition shadow-sm flex items-center gap-2 normal-case">
                     <i class="fa-solid fa-heart"></i> Donate
                 </a>
             </div>
         </div>
     </nav>
 
-    <!-- HERO SECTION -->
-    <section id="home" class="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-24 px-6 text-center">
-        <div class="max-w-3xl mx-auto space-y-6">
-            <span class="text-orange-500 font-bold uppercase tracking-widest text-xs bg-orange-500/10 px-3 py-1 rounded-full">Nyanyuka Afrika Foundation</span>
-            <h1 class="text-4xl sm:text-5xl font-black tracking-tight leading-tight">Kuinua Jamii na Kuleta Maendeleo Endelevu</h1>
-            <p class="text-gray-300 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">Tunalenga kumpa uwezo kijana na mwanamke kiuchumi, kulinda mazingira, na kuleta ustawi wa jamii.</p>
-            <div class="pt-4">
-                <a href="#donate" class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-lg transition shadow-md inline-flex items-center gap-2">Toa Mchango <i class="fa-solid fa-arrow-right text-xs"></i></a>
+    <!-- HERO SECTION (ORANGE BACKGROUND) -->
+    <section id="home" class="bg-gradient-to-br from-orange-600 to-orange-500 text-white py-20 px-6 text-center shadow-md">
+        <div class="max-w-4xl mx-auto space-y-6">
+            <span class="text-white font-bold uppercase tracking-widest text-xs bg-white/20 px-4 py-1.5 rounded-full border border-white/10">Usajili Na: 00NGO/R/8441</span>
+            <h1 class="text-3xl sm:text-5xl font-black tracking-tight leading-tight">Kuinua Jamii na Kuleta Maendeleo Endelevu</h1>
+            <p class="text-orange-50 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">Tunalenga kumpa uwezo kijana na mwanamke kiuchumi, kulinda mazingira, na kuleta ustawi wa jamii kutoka Makao Mkuu Dodoma.</p>
+            <div class="pt-4 flex flex-wrap justify-center gap-4">
+                <a href="#donate" class="bg-white text-orange-600 hover:bg-gray-100 font-bold py-3 px-6 rounded-lg transition shadow-md inline-flex items-center gap-2">Toa Mchango <i class="fa-solid fa-heart text-xs"></i></a>
+                <a href="#contact" class="bg-orange-700/40 text-white hover:bg-orange-700/60 font-semibold py-3 px-6 rounded-lg transition border border-white/20 inline-flex items-center gap-2">Become a Volunteer</a>
             </div>
         </div>
     </section>
 
-    <!-- VISION & MISSION -->
-    <section class="py-16 max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-8">
-        <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm space-y-3">
-            <div class="w-10 h-10 bg-orange-50 rounded-lg flex items-center justify-center text-orange-500 text-lg shadow-sm"><i class="fa-solid fa-eye"></i></div>
-            <h3 class="text-xl font-bold text-gray-900">Our Vision</h3>
-            <p class="text-gray-600 text-sm leading-relaxed">Kuwa taasisi kiongozi inayochochea mabadiliko endelevu, ustawi wa kiuchumi, na utunzaji wa mazingira kwa jamii thabiti barani Afrika.</p>
-        </div>
-        <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm space-y-3">
-            <div class="w-10 h-10 bg-orange-50 rounded-lg flex items-center justify-center text-orange-500 text-lg shadow-sm"><i class="fa-solid fa-bullseye"></i></div>
-            <h3 class="text-xl font-bold text-gray-900">Our Mission</h3>
-            <p class="text-gray-600 text-sm leading-relaxed">Kuwezesha vijana na wanawake kupitia elimu, mitandao ya biashara, kuhifadhi mazingira, na kutoa misaada pamoja na elimu ya kisheria kwa ustawi wa wote.</p>
-        </div>
-    </section>
-
-    <!-- ABOUT US & MANAGEMENT -->
-    <section id="about" class="py-16 bg-white border-t border-b border-gray-100">
-        <div class="max-w-5xl mx-auto px-6">
-            <div class="text-center max-w-2xl mx-auto mb-12 space-y-2">
-                <h2 class="text-3xl font-bold text-gray-900">About Us & Management</h2>
-                <div class="w-16 h-1 bg-orange-500 mx-auto rounded"></div>
-                <p class="text-gray-600 text-sm pt-2 leading-relaxed">Nyanyuka Afrika Foundation ni shirika lililojitolea kukuza fursa na kuondoa vikwazo vya maendeleo katika jamii zetu. Uongozi wetu unajumuisha timu thabiti yenye weledi inayoratibu idara zetu kuu tatu.</p>
-            </div>
-            
-            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div class="bg-gray-50 p-6 rounded-xl text-center border border-gray-100 shadow-sm">
-                    <div class="w-20 h-20 bg-orange-50 text-orange-500 rounded-full mx-auto mb-4 flex items-center justify-center text-2xl shadow-inner"><i class="fa-solid fa-user-tie"></i></div>
-                    <h4 class="font-bold text-gray-900 text-base">Dotto S. Masulubu</h4>
-                    <p class="text-xs text-orange-500 font-bold uppercase tracking-wider mt-1">Founder & CEO</p>
-                </div>
-                <div class="bg-gray-50 p-6 rounded-xl text-center border border-gray-100 shadow-sm">
-                    <div class="w-20 h-20 bg-orange-50 text-orange-500 rounded-full mx-auto mb-4 flex items-center justify-center text-2xl shadow-inner"><i class="fa-solid fa-pen-clip"></i></div>
-                    <h4 class="font-bold text-gray-900 text-base">Sarah M. Nyadu</h4>
-                    <p class="text-xs text-orange-500 font-bold uppercase tracking-wider mt-1">General Secretary</p>
-                </div>
-                <div class="bg-gray-50 p-6 rounded-xl text-center border border-gray-100 shadow-sm">
-                    <div class="w-20 h-20 bg-orange-50 text-orange-500 rounded-full mx-auto mb-4 flex items-center justify-center text-2xl shadow-inner"><i class="fa-solid fa-wallet"></i></div>
-                    <h4 class="font-bold text-gray-900 text-base">Charles D. Laiser</h4>
-                    <p class="text-xs text-orange-500 font-bold uppercase tracking-wider mt-1">Director of Finance & Admin</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- OUR PROJECTS -->
-    <section id="projects" class="py-16 max-w-5xl mx-auto px-6">
-        <div class="text-center max-w-2xl mx-auto mb-12 space-y-2">
-            <h2 class="text-3xl font-bold text-gray-900">Our Projects</h2>
+    <!-- 1. UTANGULIZI & HISTORIA -->
+    <section id="about" class="py-16 max-w-5xl mx-auto px-6 space-y-8">
+        <div class="text-center max-w-2xl mx-auto space-y-2">
+            <h2 class="text-3xl font-extrabold text-gray-900 tracking-tight">1. UTANGULIZI & HISTORIA</h2>
             <div class="w-16 h-1 bg-orange-500 mx-auto rounded"></div>
         </div>
-        <div class="grid md:grid-cols-3 gap-6">
-            <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm space-y-2">
-                <div class="text-orange-500 text-xl"><i class="fa-solid fa-tree"></i></div>
-                <h4 class="font-bold text-gray-900 text-base">Uhifadhi wa Mazingira</h4>
-                <p class="text-gray-600 text-xs leading-relaxed">Kampeni kabambe za upandaji miti na utunzaji mazingira katika mikoa mbalimbali.</p>
+        
+        <div class="bg-white p-6 sm:p-8 rounded-2xl border border-gray-100 shadow-sm space-y-6 text-gray-700 leading-relaxed text-sm sm:text-base">
+            <p>
+                <strong class="text-gray-900">Nyanyuka Afrika Foundation</strong> ni Shirika lisilo la Kiserikali (NGO) lililosajiliwa rasmi tarehe <span class="text-orange-600 font-semibold">23/05/2025</span>, likiwa na Makao Makuu yake katika Jiji la Dodoma, Tanzania, Kata ya Madukani, Bar. 9 Jengo la Cana Plaza. 
+                Shirika hili lilianzishwa kama jibu la kisera, kishujaa na cha kizalendo kwa changamoto mbalimbali zinazowakabili Watanzania kama vile: Mabadiliko ya Tabianchi, Umasikini, ukosefu wa ajira, na kukosekana kwa mitazamo chanya ya kujitegemea.
+            </p>
+            
+            <div class="bg-orange-50/70 border-l-4 border-orange-500 p-5 rounded-r-xl space-y-3">
+                <h4 class="font-bold text-orange-900 text-base"><i class="fa-solid fa-timeline mr-2"></i>Alama ya Safari ya Harakati (Misingi Yetu)</h4>
+                <ul class="space-y-2 text-xs sm:text-sm text-gray-700">
+                    <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-orange-500 mt-1 text-xs"></i> <span><strong>2012:</strong> Klabu ya <em>The Bright Family Club</em> (Shule ya Sekondari Nyamahona, Sengerema) - Kupambana na mimba shuleni.</span></li>
+                    <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-orange-500 mt-1 text-xs"></i> <span><strong>2015:</strong> <em>The Orphans Students Association (OSA)</em> (Nyakahura Sec. School, Biharamulo) - Kusaidia watoto yatima.</span></li>
+                    <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-orange-500 mt-1 text-xs"></i> <span><strong>2019:</strong> Vuguvugu la Mtandaoni <em>Tukomeshe Mimba Shuleni</em> (Chuo Kikuu cha Dodoma - UDOM).</span></li>
+                </ul>
             </div>
-            <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm space-y-2">
-                <div class="text-orange-500 text-xl"><i class="fa-solid fa-network-wired"></i></div>
-                <h4 class="font-bold text-gray-900 text-base">Biashara na Mtandao (NABN)</h4>
-                <p class="text-gray-600 text-xs leading-relaxed">Kuweka mifumo na majukwaa ya kuwaunganisha wajasiriamali vijana na wanawake kiuchumi.</p>
+            
+            <p>Kupitia misingi ya motisha ya kifikra <strong>(mindset change)</strong> na uwezeshaji wa kihali <strong>(material empowerment)</strong>, shirika linalenga kuamsha ari na uzalendo kwa vijana na wanawake ili kuchukua hatua madhubuti.</p>
+        </div>
+    </section>
+
+    <!-- 2 & 3. DIRA NA DHAMIRA -->
+    <section id="vision" class="py-12 bg-orange-50 border-t border-b border-orange-100 px-6">
+        <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-8">
+            <div class="bg-white p-6 rounded-xl border border-orange-100 shadow-sm space-y-3">
+                <div class="w-10 h-10 bg-orange-500 rounded-lg flex items-center justify-center text-white text-lg shadow-sm"><i class="fa-solid fa-eye"></i></div>
+                <h3 class="text-xl font-bold text-gray-900">2. DIRA (VISION)</h3>
+                <p class="text-gray-600 text-sm leading-relaxed">Kuwa taasisi ya kimotisha inayoongoza nchini Tanzania kwa kusaidia wananchi kuinuka kijamii, kiuchumi na kisiasa kupitia msaada wa kihali na mabadiliko ya fikra chanya.</p>
             </div>
-            <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm space-y-2">
-                <div class="text-orange-500 text-xl"><i class="fa-solid fa-scale-balanced"></i></div>
-                <h4 class="font-bold text-gray-900 text-base">Msaada wa Kisheria</h4>
-                <p class="text-gray-600 text-xs leading-relaxed">Kutoa elimu ya kisheria na utetezi kwa makundi yenye uhitaji katika jamii.</p>
+            <div class="bg-white p-6 rounded-xl border border-orange-100 shadow-sm space-y-3">
+                <div class="w-10 h-10 bg-orange-500 rounded-lg flex items-center justify-center text-white text-lg shadow-sm"><i class="fa-solid fa-bullseye"></i></div>
+                <h3 class="text-xl font-bold text-gray-900">3. DHAMIRA (MISSION)</h3>
+                <p class="text-gray-600 text-sm leading-relaxed">Kushughulikia changamoto za kijamii, kiuchumi na kisiasa kwa kutoa suluhisho kupitia ushirikiano na Serikali ya Tanzania, wananchi na wadau wa ndani na nje ya nchi.</p>
             </div>
         </div>
     </section>
 
-    <!-- DONATE SECTION -->
-    <section id="donate" class="py-16 bg-orange-50 border-t border-b border-orange-100">
+    <!-- 4 & 5. MALENGO & KIPAUMBELE -->
+    <section class="py-16 max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-10">
+        <!-- Malengo -->
+        <div class="space-y-4">
+            <h3 class="text-xl font-bold text-gray-900 border-b-2 border-orange-500 pb-2">4. MALENGO (OBJECTIVES)</h3>
+            <ul class="space-y-3 text-sm text-gray-600">
+                <li class="flex items-start gap-2.5"><span class="bg-orange-500 text-white font-bold rounded-full w-5 h-5 flex items-center justify-center text-xs shrink-0 mt-0.5">1</span> Kuboresha fursa za kiuchumi, ustawi na mafunzo ya ujuzi.</li>
+                <li class="flex items-start gap-2.5"><span class="bg-orange-500 text-white font-bold rounded-full w-5 h-5 flex items-center justify-center text-xs shrink-0 mt-0.5">2</span> Kuelimisha jamii katika kuhifadhi na kusimamia rasilimali za asili.</li>
+                <li class="flex items-start gap-2.5"><span class="bg-orange-500 text-white font-bold rounded-full w-5 h-5 flex items-center justify-center text-xs shrink-0 mt-0.5">3</span> Kukuza utawala bora, uwajibikaji na elimu ya uraia.</li>
+                <li class="flex items-start gap-2.5"><span class="bg-orange-500 text-white font-bold rounded-full w-5 h-5 flex items-center justify-center text-xs shrink-0 mt-0.5">4</span> Kutoa msaada wa kisheria na elimu ya haki kwa wasiojiweza.</li>
+                <li class="flex items-start gap-2.5"><span class="bg-orange-500 text-white font-bold rounded-full w-5 h-5 flex items-center justify-center text-xs shrink-0 mt-0.5">5</span> Kuhamasisha rasilimali fedha na vifaa kupitia ruzuku na wafadhili.</li>
+            </ul>
+        </div>
+        <!-- Maeneo ya Kipaumbele -->
+        <div class="space-y-4">
+            <h3 class="text-xl font-bold text-gray-900 border-b-2 border-orange-500 pb-2">5. MAENEO YA KIPAUMBELE</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm font-semibold text-gray-700">
+                <div class="p-3 bg-white border border-gray-100 rounded-xl shadow-sm flex items-center gap-2"><i class="fa-solid fa-tree text-orange-500"></i> Uhifadhi wa Mazingira</div>
+                <div class="p-3 bg-white border border-gray-100 rounded-xl shadow-sm flex items-center gap-2"><i class="fa-solid fa-lightbulb text-orange-500"></i> Uwezeshaji Kiuchumi</div>
+                <div class="p-3 bg-white border border-gray-100 rounded-xl shadow-sm flex items-center gap-2"><i class="fa-solid fa-graduation-cap text-orange-500"></i> Elimu & Ujuzi</div>
+                <div class="p-3 bg-white border border-gray-100 rounded-xl shadow-sm flex items-center gap-2"><i class="fa-solid fa-heart-pulse text-orange-500"></i> Afya ya Jamii</div>
+                <div class="p-3 bg-white border border-gray-100 rounded-xl shadow-sm flex items-center gap-2"><i class="fa-solid fa-scale-balanced text-orange-500"></i> Msaada wa Kisheria</div>
+                <div class="p-3 bg-white border border-gray-100 rounded-xl shadow-sm flex items-center gap-2"><i class="fa-solid fa-gavel text-orange-500"></i> Elimu ya Uraia</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6 & 7. MAKUNDI LENGWA & THAMANI -->
+    <section class="py-12 bg-gray-900 text-white px-6">
+        <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-10">
+            <div>
+                <h4 class="text-lg font-bold text-orange-400 mb-4 uppercase tracking-wider">6. Makundi Lengwa</h4>
+                <ul class="space-y-2 text-sm text-gray-300">
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right text-orange-500"></i> Jamii zilizo katika mazingira magumu</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right text-orange-500"></i> Wanafunzi wa Vyuo, Sekondari na Msingi</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right text-orange-500"></i> Vijana na Wanawake</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right text-orange-500"></i> Asasi ndogo za kijamii (CBOs) & Serikali</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-bold text-orange-400 mb-4 uppercase tracking-wider">7. Thamani za Msingi (Core Values)</h4>
+                <div class="grid grid-cols-2 gap-4 text-xs sm:text-sm">
+                    <div class="bg-gray-800 p-3 rounded-lg border border-gray-700"><span class="font-bold text-orange-400 block">Uadilifu</span> Integrity</div>
+                    <div class="bg-gray-800 p-3 rounded-lg border border-gray-700"><span class="font-bold text-orange-400 block">Uwajibikaji</span> Accountability</div>
+                    <div class="bg-gray-800 p-3 rounded-lg border border-gray-700"><span class="font-bold text-orange-400 block">Heshima</span> Respect</div>
+                    <div class="bg-gray-800 p-3 rounded-lg border border-gray-700"><span class="font-bold text-orange-400 block">Uwazi</span> Transparency</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. MIRADI ILIYOTEKELEZWA -->
+    <section id="projects" class="py-16 max-w-5xl mx-auto px-6 space-y-10">
+        <div class="text-center max-w-2xl mx-auto space-y-2">
+            <h2 class="text-3xl font-extrabold text-gray-900 tracking-tight">8. MIRADI ILIYOTEKELEZWA</h2>
+            <div class="w-16 h-1 bg-orange-500 mx-auto rounded"></div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+            <!-- Mradi 1 -->
+            <div class="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden flex flex-col justify-between">
+                <div class="p-6 space-y-3">
+                    <span class="text-[11px] font-bold uppercase tracking-wider text-orange-600 bg-orange-50 px-2.5 py-1 rounded-md">Uhifadhi wa Mazingira</span>
+                    <h4 class="font-bold text-gray-900 text-base sm:text-lg">1. Ziara Yangu Mti Wangu</h4>
+                    <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">Inalenga kuhamasisha viongozi na jamii kupanda miti kwenye kila ziara zao. Zaidi ya miti 2,000 imepandwa (Msangalalee, Kato Victory, na Kisasa Sekondari). Mradi una pongezi kutoka kwa Mkuu wa Wilaya na kibali cha TAMISEMI.</p>
+                </div>
+                <div class="bg-gray-50 px-6 py-4 border-t border-gray-100 flex gap-2 text-xs text-gray-500">
+                    <span class="bg-white border px-3 py-1 rounded shadow-sm"><i class="fa-solid fa-image mr-1 text-orange-500"></i> Picha 1: Wananchi wapanda miti</span>
+                    <span class="bg-white border px-3 py-1 rounded shadow-sm"><i class="fa-solid fa-image mr-1 text-orange-500"></i> Picha 2: Wanafunzi Kato</span>
+                </div>
+            </div>
+
+            <!-- Mradi 2 -->
+            <div class="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden flex flex-col justify-between">
+                <div class="p-6 space-y-3">
+                    <span class="text-[11px] font-bold uppercase tracking-wider text-orange-600 bg-orange-50 px-2.5 py-1 rounded-md">Mabadiliko ya Fikra</span>
+                    <h4 class="font-bold text-gray-900 text-base sm:text-lg">2. Wito Wa Kunyanyuka-Chukua Hatua Sasa</h4>
+                    <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">Jukwaa la kuamsha ari na fikra chanya kwa vijana na wanawake kupitia midahalo na makongamano. Mdahalo wa kwanza wa mafanikio ulifanyika Dodoma tarehe 15/01/2026.</p>
+                </div>
+                <div class="bg-gray-50 px-6 py-4 border-t border-gray-100 flex gap-2 text-xs text-gray-500">
+                    <span class="bg-white border px-3 py-1 rounded shadow-sm"><i class="fa-solid fa-image mr-1 text-orange-500"></i> Picha 1: C.E.O akifungua</span>
+                    <span class="bg-white border px-3 py-1 rounded shadow-sm"><i class="fa-solid fa-image mr-1 text-orange-500"></i> Picha 2: Mtoa mada</span>
+                </div>
+            </div>
+
+            <!-- Mradi 3 -->
+            <div class="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden flex flex-col justify-between">
+                <div class="p-6 space-y-3">
+                    <span class="text-[11px] font-bold uppercase tracking-wider text-orange-600 bg-orange-50 px-2.5 py-1 rounded-md">Usafi na Tabianchi</span>
+                    <h4 class="font-bold text-gray-900 text-base sm:text-lg">3. Shitaka Urithi Mazingira</h4>
+                    <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">Kukabiliana na uharibifu kwa kurithisha kizazi kijacho mazingira salama. Tarehe 14/02/2026 tuliondoa madampo mawili makubwa yasiyo rasmi mtaa wa Msangalalee Mashariki.</p>
+                </div>
+                <div class="bg-gray-50 px-6 py-4 border-t border-gray-100 flex gap-2 text-xs text-gray-500">
+                    <span class="bg-white border px-3 py-1 rounded shadow-sm"><i class="fa-solid fa-image mr-1 text-orange-500"></i> Picha 1: Wananchi usafi</span>
+                    <span class="bg-white border px-3 py-1 rounded shadow-sm"><i class="fa-solid fa-image mr-1 text-orange-500"></i> Picha 2: Mazingira safi</span>
+                </div>
+            </div>
+
+            <!-- Mradi 4 -->
+            <div class="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden flex flex-col justify-between">
+                <div class="p-6 space-y-3">
+                    <span class="text-[11px] font-bold uppercase tracking-wider text-orange-600 bg-orange-50 px-2.5 py-1 rounded-md">Ushirikiano wa Kimkoa</span>
+                    <h4 class="font-bold text-gray-900 text-base sm:text-lg">4. Maadhimisho ya Siku ya Wanawake & Itifaki</h4>
+                    <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">Shirika liliteuliwa na Ofisi ya Mkuu wa Mkoa Dodoma kushiriki kamati ya maandalizi Kongwa (08/03/2026) na kupewa fursa ya kutoa huduma kamili ya Itifaki na Ushers.</p>
+                </div>
+                <div class="bg-gray-50 px-6 py-4 border-t border-gray-100 flex justify-end text-xs font-bold text-orange-600">
+                    <span>Dodoma Kimkoa <i class="fa-solid fa-check-double ml-1"></i></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DONATE SECTION (ORANGE SECTION) -->
+    <section id="donate" class="py-16 bg-orange-500 text-white border-t border-b border-orange-600">
         <div class="max-w-4xl mx-auto px-6 text-center space-y-6">
-            <div class="text-orange-500 text-3xl"><i class="fa-solid fa-hand-holding-heart"></i></div>
-            <h3 class="text-2xl font-bold text-gray-900">Support Our Mission</h3>
-            <p class="text-gray-600 text-sm max-w-xl mx-auto leading-relaxed">Mchango wako unawezesha upandaji wa miti zaidi, unasaidia vijana kiuchumi, na kutoa msaada wa kisheria kwa jamii. Ungana nasi kuleta mabadiliko.</p>
+            <div class="text-white text-3xl"><i class="fa-solid fa-hand-holding-heart"></i></div>
+            <h3 class="text-2xl sm:text-3xl font-black">Support Our Mission</h3>
+            <p class="text-orange-100 text-sm max-w-xl mx-auto leading-relaxed">Mchango wako unawezesha upandaji wa miti zaidi, unasaidia vijana kiuchumi, na kutoa msaada wa kisheria kwa jamii yetu.</p>
             
-            <div class="grid sm:grid-cols-2 gap-4 text-left max-w-2xl mx-auto pt-4">
+            <div class="grid sm:grid-cols-2 gap-4 text-left max-w-2xl mx-auto pt-4 text-gray-900">
                 <div class="bg-white p-5 rounded-xl border border-gray-100 shadow-sm flex items-start gap-3">
                     <div class="text-orange-500 text-xl mt-0.5"><i class="fa-solid fa-mobile-screen"></i></div>
                     <div>
-                        <h5 class="font-bold text-gray-900 text-sm">Njia ya Simu (Mobile Money)</h5>
+                        <h5 class="font-bold text-sm">Njia ya Simu (Mobile Money)</h5>
                         <p class="text-gray-600 text-xs mt-1">Tigo Pesa / M-Pesa: <strong>+255 659 961 277</strong></p>
-                        <p class="text-gray-500 text-[11px] mt-0.5">Jina: Nyanyuka Afrika Foundation</p>
+                        <p class="text-gray-500 text-[11px] mt-0.5 font-semibold">Jina: Nyanyuka Afrika Foundation</p>
                     </div>
                 </div>
                 <div class="bg-white p-5 rounded-xl border border-gray-100 shadow-sm flex items-start gap-3">
                     <div class="text-orange-500 text-xl mt-0.5"><i class="fa-solid fa-building-columns"></i></div>
                     <div>
-                        <h5 class="font-bold text-gray-900 text-sm">Michango ya Benki</h5>
+                        <h5 class="font-bold text-sm">Michango ya Benki</h5>
                         <p class="text-gray-600 text-xs mt-1">Namba ya Akaunti rasmi ya shirika itawekwa hapa hivi karibuni.</p>
                     </div>
                 </div>
@@ -147,27 +236,28 @@
             <button type="button" class="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 rounded-lg shadow-sm text-sm transition">Tuma Ujumbe</button>
         </form>
 
-        <div class="space-y-6">
+        <!-- Taarifa Rasmi za Ofisi -->
+        <div class="space-y-6 text-gray-700 text-sm">
             <h4 class="font-bold text-gray-900 text-lg border-b border-gray-100 pb-2">Makao Mkuu Dodoma</h4>
             <div class="flex items-start gap-4">
                 <div class="text-orange-500 text-xl mt-0.5"><i class="fa-solid fa-box-archive"></i></div>
                 <div>
-                    <h5 class="font-bold text-gray-900 text-sm">Sanduku la Posta (S.L.P)</h5>
-                    <p class="text-gray-600 text-sm mt-0.5">S.L.P 1249, Dodoma, Tanzania.</p>
+                    <h5 class="font-bold text-gray-900 text-xs uppercase tracking-wider">Sanduku la Posta</h5>
+                    <p class="text-gray-600 mt-0.5">S.L.P 1249, Dodoma, Tanzania.</p>
                 </div>
             </div>
             <div class="flex items-start gap-4">
                 <div class="text-orange-500 text-xl mt-0.5"><i class="fa-solid fa-location-dot"></i></div>
                 <div>
-                    <h5 class="font-bold text-gray-900 text-sm">Ofisi Zetu</h5>
-                    <p class="text-gray-600 text-sm mt-0.5 leading-relaxed">Bar. 9 Jengo la Cana Plaza, Dodoma Mjini.</p>
+                    <h5 class="font-bold text-gray-900 text-xs uppercase tracking-wider">Ofisi Zetu</h5>
+                    <p class="text-gray-600 mt-0.5 leading-relaxed">Kata ya Madukani, Bar. 9 Jengo la Cana Plaza, Dodoma Mjini.</p>
                 </div>
             </div>
             <div class="flex items-start gap-4">
                 <div class="text-orange-500 text-xl mt-0.5"><i class="fa-solid fa-phone"></i></div>
                 <div>
-                    <h5 class="font-bold text-gray-900 text-sm">Simu / Mawasiliano</h5>
-                    <p class="text-gray-600 text-sm mt-0.5 flex flex-col">
+                    <h5 class="font-bold text-gray-900 text-xs uppercase tracking-wider">Simu / Mawasiliano</h5>
+                    <p class="text-gray-600 mt-0.5 flex flex-col font-medium">
                         <span>+255 659 961 277</span>
                         <span>+255 659 961 278</span>
                     </p>
@@ -176,8 +266,8 @@
             <div class="flex items-start gap-4">
                 <div class="text-orange-500 text-xl mt-0.5"><i class="fa-solid fa-envelope"></i></div>
                 <div>
-                    <h5 class="font-bold text-gray-900 text-sm">Barua Pepe (Email)</h5>
-                    <p class="text-orange-600 font-medium text-sm mt-0.5">nyanyukaafrikafoundation@gmail.com</p>
+                    <h5 class="font-bold text-gray-900 text-xs uppercase tracking-wider">Barua Pepe (Email)</h5>
+                    <p class="text-orange-600 font-medium mt-0.5">nyanyukaafrikafoundation@gmail.com</p>
                 </div>
             </div>
         </div>
