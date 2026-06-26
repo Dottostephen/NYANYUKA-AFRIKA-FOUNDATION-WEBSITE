@@ -200,28 +200,61 @@
                 <h2 class="text-3xl font-bold text-gray-900">Contact Us</h2>
                 <div class="w-20 h-1 bg-emerald-600 mx-auto mt-3"></div>
             </div>
-            <div class="grid md:grid-cols-2 gap-8">
+            <div class="grid md:grid-cols-2 gap-10">
                 <!-- Fomu ya ujumbe -->
-                <form class="space-y-4">
-                    <input type="text" placeholder="Jina Lako" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-emerald-600">
-                    <input type="email" placeholder="Barua Pepe (Email)" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-emerald-600">
-                    <textarea placeholder="Ujumbe Wako" rows="4" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-emerald-600"></textarea>
-                    <button class="w-full bg-emerald-600 text-white font-bold py-3 rounded-lg hover:bg-emerald-700 transition">Tuma Ujumbe</button>
+                <form class="space-y-4 bg-gray-50 p-6 rounded-xl border border-gray-100 shadow-sm">
+                    <h4 class="font-bold text-gray-900 text-lg mb-2">Tutumie Ujumbe</h4>
+                    <input type="text" placeholder="Jina Lako" class="w-full p-3 bg-white border border-gray-200 rounded-lg focus:outline-none focus:border-emerald-600 text-sm">
+                    <input type="email" placeholder="Barua Pepe (Email)" class="w-full p-3 bg-white border border-gray-200 rounded-lg focus:outline-none focus:border-emerald-600 text-sm">
+                    <textarea placeholder="Andika ujumbe wako hapa..." rows="4" class="w-full p-3 bg-white border border-gray-200 rounded-lg focus:outline-none focus:border-emerald-600 text-sm"></textarea>
+                    <button type="button" class="w-full bg-emerald-600 text-white font-bold py-3 rounded-lg hover:bg-emerald-700 transition text-sm shadow-md">Tuma Ujumbe</button>
                 </form>
-                <!-- Maelezo ya ofisi -->
-                <div class="space-y-4 mt-4 md:mt-0">
-                    <div class="flex items-start gap-3">
-                        <div class="text-emerald-600 text-xl"><i class="fa-solid fa-location-dot"></i></div>
+
+                <!-- Maelezo ya ofisi rasmi ya Makao Mkuu -->
+                <div class="space-y-6">
+                    <h4 class="font-bold text-gray-900 text-lg border-b border-gray-100 pb-2">Makao Mkuu Dodoma</h4>
+                    
+                    <!-- Anuani ya Posta -->
+                    <div class="flex items-start gap-4">
+                        <div class="text-emerald-600 text-xl mt-1"><i class="fa-solid fa-box-archive"></i></div>
                         <div>
-                            <h5 class="font-bold text-gray-900">Ofisi Zetu</h5>
-                            <p class="text-gray-600 text-sm">Dodoma Mjini, Tanzania</p>
+                            <h5 class="font-bold text-gray-900 text-sm">Sanduku la Posta (S.L.P)</h5>
+                            <p class="text-gray-600 text-sm mt-0.5">S.L.P 1249, Dodoma, Tanzania.</p>
                         </div>
                     </div>
-                    <div class="flex items-start gap-3">
-                        <div class="text-emerald-600 text-xl"><i class="fa-solid fa-envelope"></i></div>
+
+                    <!-- Ofisi Mahali Ilipo -->
+                    <div class="flex items-start gap-4">
+                        <div class="text-emerald-600 text-xl mt-1"><i class="fa-solid fa-location-dot"></i></div>
                         <div>
-                            <h5 class="font-bold text-gray-900">Barua Pepe</h5>
-                            <p class="text-gray-600 text-sm">info@nyanyukaafrika.or.tz</p>
+                            <h5 class="font-bold text-gray-900 text-sm">Ofisi Zetu</h5>
+                            <p class="text-gray-600 text-sm mt-0.5 leading-relaxed">
+                                Bar. 9 Jengo la Cana Plaza,<br>
+                                Dodoma Mjini.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Simu -->
+                    <div class="flex items-start gap-4">
+                        <div class="text-emerald-600 text-xl mt-1"><i class="fa-solid fa-phone"></i></div>
+                        <div>
+                            <h5 class="font-bold text-gray-900 text-sm">Simu / Mawasiliano</h5>
+                            <p class="text-gray-600 text-sm mt-0.5 flex flex-col gap-0.5">
+                                <a href="tel:+255659961277" class="hover:text-emerald-600 transition">+255 659 961 277</a>
+                                <a href="tel:+255659961278" class="hover:text-emerald-600 transition">+255 659 961 278</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Barua Pepe -->
+                    <div class="flex items-start gap-4">
+                        <div class="text-emerald-600 text-xl mt-1"><i class="fa-solid fa-envelope"></i></div>
+                        <div>
+                            <h5 class="font-bold text-gray-900 text-sm">Barua Pepe (Email)</h5>
+                            <p class="text-gray-600 text-sm mt-0.5">
+                                <a href="mailto:nyanyukaafrikafoundation@gmail.com" class="hover:text-emerald-600 transition text-emerald-700 font-medium">nyanyukaafrikafoundation@gmail.com</a>
+                            </p>
                         </div>
                     </div>
                 </div>
