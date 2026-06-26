@@ -3,122 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nyanyuka Afrika Foundation</title>
+    <title>Nyanyuka Afrika Foundation | Nyumbani</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-white text-gray-900">
 
-    <!-- NAVIGATION MENU -->
-    <nav class="bg-white shadow-md sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 h-20 flex items-center justify-between">
-            <div class="flex items-center gap-2 font-black text-xl tracking-tighter">
-                <i class="fa-solid fa-seedling text-orange-500"></i> NYANYUKA AFRIKA
-            </div>
-            <div class="hidden lg:flex items-center gap-6 text-[13px] font-bold uppercase text-gray-700">
-                <a href="#home" class="hover:text-orange-500">Home</a>
-                <a href="#about" class="hover:text-orange-500">About Us & Management</a>
-                <a href="#vision" class="hover:text-orange-500">Vision & Mission</a>
-                <a href="#projects" class="hover:text-orange-500">Our Projects</a>
-                <a href="#gallery" class="hover:text-orange-500">Gallery</a>
-                <a href="#news" class="hover:text-orange-500">News & Blog</a>
-                <a href="#donate" class="text-orange-600 border border-orange-500 px-4 py-2 rounded-lg hover:bg-orange-500 hover:text-white transition">Donate</a>
+    <!-- NAVIGATION -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50 border-b border-orange-100">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="index.html" class="font-black text-xl tracking-tighter text-orange-600">
+                NYANYUKA AFRIKA
+            </a>
+            <div class="hidden lg:flex items-center gap-6 text-[12px] font-bold uppercase text-gray-700">
+                <a href="index.html" class="hover:text-orange-600">Home</a>
+                <a href="about.html" class="hover:text-orange-600">About Us & Management</a>
+                <a href="projects.html" class="hover:text-orange-600">Our Projects</a>
+                <a href="news.html" class="hover:text-orange-600">News & Blog</a>
+                <a href="donate.html" class="bg-orange-600 text-white px-5 py-2 rounded-full hover:bg-orange-700 transition">Donate</a>
+                <a href="contact.html" class="hover:text-orange-600">Contact</a>
             </div>
         </div>
     </nav>
 
-    <!-- HERO SECTION NA PICHA YA MAZINGIRA AFRIKA -->
-    <section id="home" class="relative h-[600px] flex items-center justify-center text-center px-6">
-        <img src="https://images.unsplash.com/photo-1590664863685-a99405e9a313?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80" alt="Mazingira Afrika" class="absolute inset-0 w-full h-full object-cover">
-        <div class="absolute inset-0 bg-black/50"></div>
-        <div class="relative z-10 text-white max-w-3xl space-y-4">
-            <h1 class="text-4xl sm:text-6xl font-black uppercase">Nyanyuka Afrika Foundation</h1>
-            <p class="text-lg text-gray-200">Kuinua jamii, kuhifadhi mazingira, na kuleta maendeleo endelevu Tanzania.</p>
-            <a href="#contact" class="inline-block bg-orange-500 px-8 py-4 font-bold rounded-lg hover:bg-orange-600 transition">Contact Us</a>
+    <!-- HERO SECTION (Picha ya Mazingira) -->
+    <header class="relative h-[500px] flex items-center justify-center text-center overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb7784b9?auto=format&fit=crop&w=1600&q=80" alt="Mazingira Afrika" class="absolute inset-0 w-full h-full object-cover">
+        <div class="absolute inset-0 bg-gradient-to-b from-orange-600/60 to-black/70"></div>
+        <div class="relative z-10 text-white px-6">
+            <h1 class="text-5xl md:text-7xl font-black uppercase mb-4 tracking-tight">Kuinua Jamii Afrika</h1>
+            <p class="text-lg md:text-xl font-light mb-8 max-w-2xl mx-auto text-orange-100">
+                Dotto Stephen Masulubu akiongoza jitihada za uhifadhi, uwezeshaji, na maendeleo endelevu.
+            </p>
+            <a href="projects.html" class="bg-white text-orange-600 px-10 py-4 font-bold rounded-full hover:bg-orange-50 transition">Gundua Miradi Yetu</a>
         </div>
+    </header>
+
+    <!-- WELCOME SECTION -->
+    <section class="py-20 px-6 max-w-5xl mx-auto text-center">
+        <h2 class="text-3xl font-black mb-6">Karibu Nyanyuka Afrika Foundation</h2>
+        <p class="text-gray-600 leading-relaxed max-w-3xl mx-auto">
+            Sisi ni taasisi inayojikita katika kuleta mabadiliko chanya kwa jamii kupitia miradi ya kimkakati, 
+            kuhifadhi mazingira, na kuimarisha biashara za vijana na wanawake nchini Tanzania.
+        </p>
     </section>
 
-    <!-- 1. ABOUT US & MANAGEMENT -->
-    <section id="about" class="py-20 max-w-6xl mx-auto px-6">
-        <h2 class="text-3xl font-black mb-10 text-center">About Us & Management</h2>
-        <div class="grid md:grid-cols-3 gap-8">
-            <div class="bg-white p-6 shadow-sm border rounded-xl">
-                <h3 class="font-bold text-orange-500 mb-2">Board of Directors</h3>
-                <p class="text-sm">Usimamizi wa sera, maadili na maamuzi makuu ya shirika.</p>
-            </div>
-            <div class="bg-white p-6 shadow-sm border rounded-xl">
-                <h3 class="font-bold text-orange-500 mb-2">Management</h3>
-                <p class="text-sm">Utekelezaji wa miradi na uendeshaji wa shughuli za kila siku.</p>
-            </div>
-            <div class="bg-white p-6 shadow-sm border rounded-xl">
-                <h3 class="font-bold text-orange-500 mb-2">Zone Management</h3>
-                <p class="text-sm">Uratibu wa shughuli za shirika katika kanda mbalimbali nchini.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- 2. VISION & MISSION -->
-    <section id="vision" class="py-20 bg-gray-900 text-white px-6 text-center">
-        <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-12">
-            <div><h3 class="font-bold text-orange-500 mb-2">Vision</h3><p class="text-sm">Kuwa taasisi inayoongoza kwa maendeleo endelevu Afrika.</p></div>
-            <div><h3 class="font-bold text-orange-500 mb-2">Mission</h3><p class="text-sm">Kutoa suluhisho la kijamii kupitia uwezeshaji na uhifadhi.</p></div>
-        </div>
-    </section>
-
-    <!-- NEWS & BLOG SECTION -->
-    <section id="news" class="py-20 max-w-6xl mx-auto px-6">
-        <h2 class="text-3xl font-black mb-10 text-center">News & Blog</h2>
-        <div class="grid md:grid-cols-3 gap-8">
-            <div class="bg-white border rounded-lg overflow-hidden shadow-sm">
-                <div class="h-40 bg-gray-200"></div>
-                <div class="p-4"><h4 class="font-bold">Mti Wangu Campaign</h4><p class="text-xs mt-2 text-gray-500">Tarehe: 2026-06-26</p></div>
-            </div>
-            <div class="bg-white border rounded-lg overflow-hidden shadow-sm">
-                <div class="h-40 bg-gray-200"></div>
-                <div class="p-4"><h4 class="font-bold">Uwezeshaji Wanawake</h4><p class="text-xs mt-2 text-gray-500">Tarehe: 2026-06-20</p></div>
-            </div>
-            <div class="bg-white border rounded-lg overflow-hidden shadow-sm">
-                <div class="h-40 bg-gray-200"></div>
-                <div class="p-4"><h4 class="font-bold">Legal Aid Success</h4><p class="text-xs mt-2 text-gray-500">Tarehe: 2026-06-15</p></div>
-            </div>
-        </div>
-    </section>
-<!-- DONATE SECTION -->
-    <section id="donate" class="py-20 bg-gray-100 px-6">
-        <div class="max-w-3xl mx-auto bg-white p-8 md:p-12 rounded-3xl shadow-lg border border-gray-200 text-center">
-            <div class="w-16 h-16 bg-orange-100 text-orange-600 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl">
-                <i class="fa-solid fa-heart"></i>
-            </div>
-            <h2 class="text-3xl font-black text-gray-900 mb-4">Support Our Cause</h2>
-            <p class="text-gray-600 mb-8">Uchango wako unasaidia kufanikisha miradi ya kijamii, uhifadhi wa mazingira, na uwezeshaji wa vijana na wanawake.</p>
-            
-            <div class="bg-gray-900 p-6 rounded-2xl text-white inline-block text-left w-full max-w-md">
-                <h3 class="text-orange-500 font-bold mb-4 border-b border-gray-700 pb-2">BENKI TAARIFA</h3>
-                <div class="space-y-3 text-sm">
-                    <p><span class="text-gray-400">Benki:</span> <span class="font-bold">NMB</span></p>
-                    <p><span class="text-gray-400">Jina:</span> <span class="font-bold">NYANYUKA AFRIKA FOUNDATION</span></p>
-                    <p><span class="text-gray-400">Akaunti Na:</span> <span class="font-bold text-lg text-orange-400">51710102544</span></p>
-                </div>
-            </div>
-            
-            <div class="mt-8 text-xs text-gray-500 italic">
-                *Asante kwa kuunga mkono juhudi zetu za maendeleo.
-            </div>
-        </div>
-    </section>
-    <!-- CONTACT US -->
-    <section id="contact" class="py-20 bg-orange-500 text-white text-center">
-        <h2 class="text-3xl font-black mb-6">Contact Us</h2>
-        <p>Bar. 9 Jengo la Cana Plaza, Dodoma, Tanzania.</p>
-        <p class="font-bold mt-2">+255 659 961 277</p>
-    </section>
-
-    <footer class="py-6 text-center text-xs text-gray-500">
+    <footer class="py-10 bg-gray-50 text-center text-sm text-gray-500 border-t border-orange-100">
         &copy; 2026 Nyanyuka Afrika Foundation.
     </footer>
-
-</body>
-</html>
 
 </body>
 </html>
