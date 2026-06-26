@@ -327,18 +327,176 @@
         </div>
     </section>
 
-    <!-- 8. DONATE SECTION -->
-    <section id="donate" class="py-16 bg-emerald-700 text-white text-center">
-        <div class="container mx-auto px-6 max-w-xl">
-            <h2 class="text-3xl font-bold">Support Our Mission</h2>
-            <p class="mt-4 text-emerald-100">Mchango wako unawezesha upandaji wa miti zaidi, unasaidia vijana kiuchumi, na kutoa msaada wa kisheria kwa jamii. Ungana nasi kuleta mabadiliko.</p>
-            <div class="mt-6 bg-white text-gray-900 p-6 rounded-xl shadow-lg">
-                <p class="font-bold text-sm text-gray-500 uppercase tracking-wider">Njia za Kuchangia</p>
-                <p class="text-xl font-extrabold text-emerald-800 mt-2">Benki / Simu ya Mkononi</p>
-                <p class="text-gray-600 text-sm mt-1">Maelezo ya akaunti na namba rasmi za shirika yatawekwa hapa.</p>
+  <!DOCTYPE html>
+<html lang="sw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nyanyuka Afrika - Dashboard & Donate</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-100 font-sans antialiased">
+
+    <!-- MENU YA JUU (TOP NAVIGATION) -->
+    <nav class="bg-gray-900 text-white shadow-md sticky top-0 z-50">
+        <div class="w-full px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                
+                <!-- Logo & Link za Idara -->
+                <div class="flex items-center gap-8">
+                    <div class="flex-shrink-0 font-bold text-xl tracking-wider flex items-center gap-3">
+                        <i class="fa-solid fa-chart-line text-orange-500"></i>
+                        <span>NYANYUKA AFRIKA</span>
+                    </div>
+                    <!-- Menu Links -->
+                    <div class="hidden md:block">
+                        <div class="flex items-baseline space-x-3">
+                            <a href="#" class="px-4 py-2 bg-orange-500 rounded-lg text-white font-medium text-sm transition shadow-sm">Dashboard</a>
+                            <a href="#" class="px-4 py-2 text-gray-300 hover:bg-gray-800 hover:text-white rounded-lg text-sm transition">Wanachama</a>
+                            <a href="#" class="px-4 py-2 text-gray-300 hover:bg-gray-800 hover:text-white rounded-lg text-sm transition">Miradi & Biashara</a>
+                            <a href="#" class="px-4 py-2 text-gray-300 hover:bg-gray-800 hover:text-white rounded-lg text-sm transition">Idara ya Fedha</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Upande wa Kulia: Wasifu na Kitufe cha Donate -->
+                <div class="flex items-center gap-4">
+                    <!-- Kitufe cha Donate (Orange) -->
+                    <a href="#donate-section" class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded-lg text-sm transition shadow-md flex items-center gap-2">
+                        <i class="fa-solid fa-heart"></i> Donate
+                    </a>
+                    
+                    <div class="h-8 w-px bg-gray-700 hidden sm:block"></div>
+                    
+                    <div class="flex items-center gap-2 hidden sm:flex">
+                        <div class="w-9 h-9 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold shadow-sm">
+                            DS
+                        </div>
+                        <span class="text-sm font-semibold text-gray-200">Dotto S.</span>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
+    </nav>
+
+    <!-- ENEO KUU LA DASHBOARD -->
+    <main class="w-full px-4 sm:px-6 lg:px-8 py-8">
+        <div class="space-y-6">
+            
+            <!-- UTANGULIZI -->
+            <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm flex flex-col md:flex-row justify-between items-start md:items-center gap-4 w-full">
+                <div>
+                    <h2 class="text-2xl font-bold text-gray-900">Habari ya jioni, Dotto! 👋</h2>
+                    <p class="text-gray-500 text-sm mt-1">Karibu kwenye mfumo wako. Kitufe cha kuchangia kimeshawekwa tayari kwa rangi ya Orange.</p>
+                </div>
+                <button class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2.5 px-4 rounded-lg shadow-md text-sm transition flex items-center gap-2 whitespace-nowrap">
+                    <i class="fa-solid fa-plus"></i> Ripoti Mpya
+                </button>
+            </div>
+
+            <!-- CARDS ZA DATA (STATISTICS) -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full">
+                <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm flex items-center justify-between">
+                    <div class="space-y-1">
+                        <span class="text-gray-500 text-xs font-bold uppercase tracking-wider">Jumla ya Wanachama</span>
+                        <h3 class="text-3xl font-black text-gray-900">1,240</h3>
+                    </div>
+                    <div class="w-14 h-14 bg-orange-50 rounded-xl flex items-center justify-center text-orange-500 text-2xl shadow-sm"><i class="fa-solid fa-users"></i></div>
+                </div>
+                <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm flex items-center justify-between">
+                    <div class="space-y-1">
+                        <span class="text-gray-500 text-xs font-bold uppercase tracking-wider">Miradi Inayofanya Kazi</span>
+                        <h3 class="text-3xl font-black text-gray-900">4</h3>
+                    </div>
+                    <div class="w-14 h-14 bg-orange-50 rounded-xl flex items-center justify-center text-orange-500 text-2xl shadow-sm"><i class="fa-solid fa-diagram-project"></i></div>
+                </div>
+                <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm flex items-center justify-between">
+                    <div class="space-y-1">
+                        <span class="text-gray-500 text-xs font-bold uppercase tracking-wider">Biashara Mtandaoni</span>
+                        <h3 class="text-3xl font-black text-gray-900">85</h3>
+                    </div>
+                    <div class="w-14 h-14 bg-orange-50 rounded-xl flex items-center justify-center text-orange-500 text-2xl shadow-sm"><i class="fa-solid fa-briefcase"></i></div>
+                </div>
+                <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm flex items-center justify-between">
+                    <div class="space-y-1">
+                        <span class="text-gray-500 text-xs font-bold uppercase tracking-wider">Idara Kuu</span>
+                        <h3 class="text-3xl font-black text-gray-900">3</h3>
+                    </div>
+                    <div class="w-14 h-14 bg-orange-50 rounded-xl flex items-center justify-center text-orange-500 text-2xl shadow-sm"><i class="fa-solid fa-sitemap"></i></div>
+                </div>
+            </div>
+
+            <!-- MEZA YA SHUGHULI -->
+            <div class="bg-white rounded-xl border border-gray-100 shadow-sm overflow-hidden w-full mt-4">
+                <div class="p-5 border-b border-gray-100 flex justify-between items-center bg-gray-50">
+                    <h4 class="font-bold text-gray-900 text-lg">Shughuli za Hivi Karibuni za Timu</h4>
+                </div>
+                <div class="overflow-x-auto w-full">
+                    <table class="w-full text-left border-collapse min-w-[800px]">
+                        <thead>
+                            <tr class="bg-gray-100/50 text-gray-600 text-xs font-bold uppercase tracking-wider border-b border-gray-200">
+                                <th class="p-5">Msimamizi</th>
+                                <th class="p-5">Kitendo / Jukumu Lililofanywa</th>
+                                <th class="p-5">Idara Husika</th>
+                                <th class="p-5">Hali (Status)</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-sm text-gray-700 divide-y divide-gray-100">
+                            <tr>
+                                <td class="p-5 font-semibold text-gray-900 flex items-center gap-3">Dotto S. Masulubu</td>
+                                <td class="p-5 text-gray-600">Alitengeneza muundo mpya na mpana wa wavuti</td>
+                                <td class="p-5 text-xs font-medium text-gray-500">Usimamizi Mkuu</td>
+                                <td class="p-5"><span class="px-3 py-1 bg-emerald-50 text-emerald-700 text-xs font-bold rounded-full">Kamilifu</span></td>
+                            </tr>
+                            <tr>
+                                <td class="p-5 font-semibold text-gray-900 flex items-center gap-3">Sarah M. Nyadu</td>
+                                <td class="p-5 text-gray-600">Alisajili wanachama 15 wapya kwenye kanzi data</td>
+                                <td class="p-5 text-xs font-medium text-gray-500">Katibu Mkuu</td>
+                                <td class="p-5"><span class="px-3 py-1 bg-emerald-50 text-emerald-700 text-xs font-bold rounded-full">Kamilifu</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- SEHEMU YA DONATE (ORANGE SECTION) -->
+            <section id="donate-section" class="bg-white p-8 rounded-xl border border-orange-200 shadow-sm w-full mt-8">
+                <div class="text-center max-w-2xl mx-auto mb-8">
+                    <span class="text-orange-500 text-2xl"><i class="fa-solid fa-hand-holding-heart"></i></span>
+                    <h3 class="text-2xl font-bold text-gray-900 mt-2">Saidia Malengo ya Nyanyuka Afrika Foundation</h3>
+                    <p class="text-gray-500 text-sm mt-2">Mchango wako unawezesha vijana na wanawake kujikwamua kiuchumi na kulinda mazingira yetu.</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+                    <!-- Njia ya 1: Benki -->
+                    <div class="border border-gray-100 bg-gray-50 p-6 rounded-xl flex gap-4 items-start">
+                        <div class="text-orange-500 text-2xl mt-1"><i class="fa-solid fa-building-columns"></i></div>
+                        <div>
+                            <h4 class="font-bold text-gray-900 text-base">Michango ya Benki</h4>
+                            <p class="text-gray-600 text-sm mt-1">Namba ya Akaunti itatokea hapa.</p>
+                            <span class="inline-block mt-2 text-xs bg-orange-100 text-orange-700 font-bold px-2 py-0.5 rounded">CRDB / NMB</span>
+                        </div>
+                    </div>
+                    <!-- Njia ya 2: Mtandao wa Simu -->
+                    <div class="border border-gray-100 bg-gray-50 p-6 rounded-xl flex gap-4 items-start">
+                        <div class="text-orange-500 text-2xl mt-1"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                        <div>
+                            <h4 class="font-bold text-gray-900 text-base">Njia ya Simu (Mobile Money)</h4>
+                            <p class="text-gray-600 text-sm mt-1">Tigo Pesa / M-Pesa: <strong>+255 659 961 277</strong></p>
+                            <span class="inline-block mt-2 text-xs bg-orange-100 text-orange-700 font-bold px-2 py-0.5 rounded">Jina: Nyanyuka Afrika Foundation</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+</body>
+</html>
 
    <!-- 9. CONTACT US -->
     <section id="contact" class="py-16 bg-white">
