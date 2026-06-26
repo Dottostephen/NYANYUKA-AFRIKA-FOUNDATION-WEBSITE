@@ -3,13 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nyanyuka Afrika Foundation | Rasmi</title>
-    <!-- Tailwind CSS kwa ajili ya muonekano wa kisasa -->
+    <title>Nyanyuka Afrika - Dashboard Mpana</title>
+    <!-- Tailwind CSS -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <!-- FontAwesome kwa ajili ya Icons -->
+    <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans">
+<body class="bg-gray-100 font-sans antialiased">
+
+    <!-- MENU YA JUU (TOP NAVIGATION) - Inafanya Dashboard iwe pana! -->
+    <nav class="bg-gray-900 text-white shadow-md">
+        <div class="w-full px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                
+                <!-- Logo & Link za Idara -->
+                <div class="flex items-center gap-8">
+                    <div class="flex-shrink-0 font-bold text-xl tracking-wider flex items-center gap-3">
+                        <i class="fa-solid fa-chart-line text-orange-500"></i>
+                        <span>NYANYUKA AFRIKA</span>
+                    </div>
+                    <!-- Menu Links (Inaonekana kwenye kompyuta) -->
+                    <div class="hidden md:block">
+                        <div class="flex items-baseline space-x-3">
+                            <a href="#" class="px-4 py-2 bg-orange-500 rounded-lg text-white font-medium text-sm transition shadow-sm">Dashboard</a>
+                            <a href="#" class="px-4 py-2 text-gray-300 hover:bg-gray-800 hover:text-white rounded-lg text-sm transition">Wanachama</a>
+                            <a href="#" class="px-4 py-2 text-gray-300 hover:bg-gray-800 hover:text-white rounded-lg text-sm transition">Miradi & Biashara</a>
+                            <a href="#" class="px-4 py-2 text-gray-300 hover:bg-gray-800 hover:text-white rounded-lg text-sm transition">Idara ya Fedha</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Wasifu wa Mtumiaji (Profile) -->
+                <div class="flex items-center gap-4">
+                    <button class="text-gray-300 hover:text-white transition relative">
+                        <i class="fa-solid fa-bell text-lg"></i>
+                        <span class="absolute -top-1 -right-1 w-2.5 h-2.5 bg-orange-500 rounded-full border-2 border-gray-900"></span>
+                    </button>
+                    <div class="h-8 w-px bg-gray-700"></div>
+                    <div class="flex items-center gap-2">
+                        <div class="w-9 h-9 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold shadow-sm">
+                            DS
+                        </div>
+                        <span class="text-sm font-semibold text-gray-200 hidden sm:block">Dotto S.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ENEO KUU LA DASHBOARD (LILILOPANUKA FULL WIDTH) -->
+    <main class="w-full px-4 sm:px-6 lg:px-8 py-8">
+        
+        <div class="space-y-6">
+            
+            <!-- UTANGULIZI -->
+            <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm flex flex-col md:flex-row justify-between items-start md:items-center gap-4 w-full">
+                <div>
+                    <h2 class="text-2xl font-bold text-gray-900">Habari ya jioni, Dotto! 👋</h2>
+                    <p class="text-gray-500 text-sm mt-1">Karibu kwenye mfumo wako. Eneo hili sasa limepanuliwa kikamilifu kukuonyesha taarifa nyingi zaidi kwa urahisi.</p>
+                </div>
+                <button class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2.5 px-4 rounded-lg shadow-md text-sm transition flex items-center gap-2 whitespace-nowrap">
+                    <i class="fa-solid fa-plus"></i> Ripoti Mpya
+                </button>
+            </div>
+
+            <!-- CARDS ZA DATA (STATISTICS ZILIZOPANUKA) -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full">
+                <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm flex items-center justify-between transition hover:shadow-md">
+                    <div class="space-y-1">
+                        <span class="text-gray-500 text-xs font-bold uppercase tracking-wider">Jumla ya Wanachama</span>
+                        <h3 class="text-3xl font-black text-gray-900">1,240</h3>
+                    </div>
+                    <div class="w-14 h-14 bg-orange-50 rounded-xl flex items-center justify-center text-orange-500 text-2xl shadow-sm"><i class="fa-solid fa-users"></i></div>
+                </div>
+                <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm flex items-center justify-between transition hover:shadow-md">
+                    <div class="space-y-1">
+                        <span class="text-gray-500 text-xs font-bold uppercase tracking-wider">Miradi Inayofanya Kazi</span>
+                        <h3 class="text-3xl font-black text-gray-900">4</h3>
+                    </div>
+                    <div class="w-14 h-14 bg-orange-50 rounded-xl flex items-center justify-center text-orange-500 text-2xl shadow-sm"><i class="fa-solid fa-diagram-project"></i></div>
+                </div>
+                <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm flex items-center justify-between transition hover:shadow-md">
+                    <div class="space-y-1">
+                        <span class="text-gray-500 text-xs font-bold uppercase tracking-wider">Biashara Mtandaoni</span>
+                        <h3 class="text-3xl font-black text-gray-900">85</h3>
+                    </div>
+                    <div class="w-14 h-14 bg-orange-50 rounded-xl flex items-center justify-center text-orange-500 text-2xl shadow-sm"><i class="fa-solid fa-briefcase"></i></div>
+                </div>
+                <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm flex items-center justify-between transition hover:shadow-md">
+                    <div class="space-y-1">
+                        <span class="text-gray-500 text-xs font-bold uppercase tracking-wider">Idara Kuu</span>
+                        <h3 class="text-3xl font-black text-gray-900">3</h3>
+                    </div>
+                    <div class="w-14 h-14 bg-orange-50 rounded-xl flex items-center justify-center text-orange-500 text-2xl shadow-sm"><i class="fa-solid fa-sitemap"></i></div>
+                </div>
+            </div>
+
+            <!-- MEZA YA SHUGHULI / RECENT ACTIVITY TABLE (MPANA) -->
+            <div class="bg-white rounded-xl border border-gray-100 shadow-sm overflow-hidden w-full mt-4">
+                <div class="p-5 border-b border-gray-100 flex justify-between items-center bg-gray-50">
+                    <h4 class="font-bold text-gray-900 text-lg">Shughuli za Hivi Karibuni za Timu</h4>
+                    <button class="text-sm font-bold text-orange-500 hover:text-orange-600 px-3 py-1 border border-orange-200 rounded hover:bg-orange-50 transition">Ona Zote</button>
+                </div>
+                <div class="overflow-x-auto w-full">
+                    <table class="w-full text-left border-collapse min-w-[800px]">
+                        <thead>
+                            <tr class="bg-gray-100/50 text-gray-600 text-xs font-bold uppercase tracking-wider border-b border-gray-200">
+                                <th class="p-5">Msimamizi</th>
+                                <th class="p-5">Kitendo / Jukumu Lililofanywa</th>
+                                <th class="p-5">Idara Husika</th>
+                                <th class="p-5">Tarehe</th>
+                                <th class="p-5">Hali (Status)</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-sm text-gray-700 divide-y divide-gray-100">
+                            <tr class="hover:bg-gray-50 transition">
+                                <td class="p-5 font-semibold text-gray-900 flex items-center gap-3">
+                                    <div class="w-8 h-8 rounded-full bg-gray-200 flex justify-center items-center font-bold text-xs">DM</div>
+                                    Dotto S. Masulubu
+                                </td>
+                                <td class="p-5 text-gray-600">Alitengeneza muundo mpya na mpana wa wavuti</td>
+                                <td class="p-5 text-xs font-medium text-gray-500"><i class="fa-solid fa-laptop-code mr-1"></i> Usimamizi Mkuu</td>
+                                <td class="p-5 text-gray-500 text-xs">Leo, 11:30 Jioni</td>
+                                <td class="p-5"><span class="px-3 py-1 bg-emerald-50 text-emerald-700 text-xs font-bold rounded-full border border-emerald-200">Kamilifu</span></td>
+                            </tr>
+                            <tr class="hover:bg-gray-50 transition">
+                                <td class="p-5 font-semibold text-gray-900 flex items-center gap-3">
+                                    <div class="w-8 h-8 rounded-full bg-gray-200 flex justify-center items-center font-bold text-xs">SN</div>
+                                    Sarah M. Nyadu
+                                </td>
+                                <td class="p-5 text-gray-600">Alisajili wanachama 15 wapya kwenye kanzi data</td>
+                                <td class="p-5 text-xs font-medium text-gray-500"><i class="fa-solid fa-file-signature mr-1"></i> Katibu Mkuu</td>
+                                <td class="p-5 text-gray-500 text-xs">Jana, 04:15 Jioni</td>
+                                <td class="p-5"><span class="px-3 py-1 bg-emerald-50 text-emerald-700 text-xs font-bold rounded-full border border-emerald-200">Kamilifu</span></td>
+                            </tr>
+                            <tr class="hover:bg-gray-50 transition">
+                                <td class="p-5 font-semibold text-gray-900 flex items-center gap-3">
+                                    <div class="w-8 h-8 rounded-full bg-gray-200 flex justify-center items-center font-bold text-xs">CL</div>
+                                    Charles D. Laiser
+                                </td>
+                                <td class="p-5 text-gray-600">Alipitia bajeti ya uendeshaji ya robo ya pili</td>
+                                <td class="p-5 text-xs font-medium text-gray-500"><i class="fa-solid fa-money-bill-wave mr-1"></i> Fedha & Mipango</td>
+                                <td class="p-5 text-gray-500 text-xs">Jana, 10:00 Asubuhi</td>
+                                <td class="p-5"><span class="px-3 py-1 bg-amber-50 text-amber-700 text-xs font-bold rounded-full border border-amber-200">Inapitiwa</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+</html>
 
     <!-- 1. HEADER & NAVIGATION (Zikiwemo kurasa zako zote) -->
     <header class="bg-white shadow-md sticky top-0 z-50">
