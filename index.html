@@ -7,218 +7,173 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body class="bg-white text-gray-900">
-<!-- NAVIGATION / MENU YA JUU -->
-    <nav class="bg-white shadow-sm sticky top-0 z-50 border-b border-orange-100">
-        <div class="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between">
-            
-            <!-- SEHEMU YA LOGO INAPOFYONZWA -->
-            <a href="index.html" class="flex items-center">
-                <!-- Hapa picha yako ya logo.jpg inasomwa na kusafishwa -->
-                <img src="logo.jpg" alt="Nyanyuka Afrika Foundation Logo" class="h-20 w-auto object-contain mix-blend-multiply">
-            </a>
+<body class="bg-gray-50 text-gray-900 antialiased">
 
-            <!-- VIUNGO VYA MENU -->
-            <div class="hidden lg:flex items-center gap-6 text-[12px] font-bold uppercase text-gray-700">
-                <a href="index.html" class="hover:text-orange-600 transition">Home</a>
-                <a href="about.html" class="hover:text-orange-600 transition">About Us</a>
-                <a href="management.html" class="hover:text-orange-600 transition">Management</a>
-                <a href="projects.html" class="hover:text-orange-600 transition">Projects</a>
-                <a href="contact.html" class="hover:text-orange-600 transition">Contact</a>
-                <a href="donation.html" class="bg-orange-600 text-white px-5 py-2 rounded-full hover:bg-orange-700 transition">Donate</a>
+    <nav class="bg-orange-600 shadow-md sticky top-0 z-50 border-b border-orange-700">
+        <div class="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between">
+            <a href="index.html" class="flex items-center bg-white rounded-xl p-1 shadow-inner">
+                <img src="logo.jpg" alt="Logo" class="h-16 w-auto object-contain">
+            </a>
+            
+            <div class="hidden lg:flex items-center gap-6 text-[12px] font-bold uppercase text-white">
+                <a href="index.html" class="bg-orange-800 px-3 py-2 rounded-lg transition">Home</a>
+                <a href="about.html" class="hover:bg-orange-700 px-3 py-2 rounded-lg transition">About Us</a>
+                <a href="management.html" class="hover:bg-orange-700 px-3 py-2 rounded-lg transition">Management</a>
+                <a href="projects.html" class="hover:bg-orange-700 px-3 py-2 rounded-lg transition">Projects</a>
+                <a href="contact.html" class="hover:bg-orange-700 px-3 py-2 rounded-lg transition">Contact</a>
+                <a href="donation.html" class="bg-gray-950 text-white px-5 py-2 rounded-full hover:bg-white hover:text-orange-600 transition shadow-md">Donate</a>
             </div>
         </div>
     </nav>
 
-    <!-- HERO SECTION (SEHEMU YA JUU KABISA HOME) -->
-<section class="max-w-7xl mx-auto px-6 py-12 lg:py-20">
-    <div class="grid lg:grid-cols-12 gap-12 items-center">
-        
-        <!-- Upande wa Maelezo (Kushoto) -->
-        <div class="lg:col-span-6 space-y-6">
-            <span class="text-orange-600 font-bold uppercase text-xs tracking-wider bg-orange-100 px-3 py-1 rounded-full">
-                Karibu Nyanyuka Afrika Foundation
-            </span>
-            <h1 class="text-4xl lg:text-6xl font-black uppercase tracking-tight leading-none text-gray-950">
-                Inua Jamii, <br><span class="text-orange-600">Tunza Mazingira.</span>
-            </h1>
-            <p class="text-gray-600 text-sm lg:text-base leading-relaxed">
-                Tunajikita katika kuleta mabadiliko ya kiuchumi na kijamii kutoka Makao Makuu yetu Dodoma. Kupitia miradi ya uwezeshaji na utunzaji wa mazingira, tunatengeneza kesho iliyo bora.
+    <main class="max-w-7xl mx-auto px-6 py-12 lg:py-20">
+        <div class="grid lg:grid-cols-12 gap-12 items-center">
+            
+            <div class="lg:col-span-5 space-y-6">
+                <span class="inline-block text-orange-700 font-bold uppercase text-xs tracking-wider bg-orange-100 px-3 py-1 rounded-full border border-orange-200">
+                    Karibu Nyanyuka Afrika Foundation
+                </span>
+                <h1 class="text-4xl lg:text-5xl font-black uppercase tracking-tight leading-none text-gray-950">
+                    Inua Jamii, <br><span class="text-orange-600">Tunza Mazingira.</span>
+                </h1>
+                <p class="text-gray-600 text-sm lg:text-base leading-relaxed">
+                    Tunajikita katika kuleta mabadiliko ya kiuchumi na kijamii kutoka Makao Makuu yetu Dodoma. Kupitia miradi ya uwezeshaji na utunzaji wa mazingira, tunatengeneza kesho iliyo bora.
+                </p>
+                <div class="flex gap-4 pt-2">
+                    <a href="projects.html" class="bg-orange-600 text-white font-bold text-xs uppercase px-6 py-3.5 rounded-full hover:bg-orange-700 transition tracking-wider shadow-md shadow-orange-200">
+                        Miradi Yetu
+                    </a>
+                    <a href="donation.html" class="border-2 border-orange-600 text-orange-600 font-bold text-xs uppercase px-6 py-3.5 rounded-full hover:bg-orange-600 hover:text-white transition tracking-wider">
+                        Changia
+                    </a>
+                </div>
+            </div>
+
+            <div class="lg:col-span-7">
+                <div class="relative rounded-3xl overflow-hidden shadow-xl border-4 border-orange-600 w-full h-[300px] md:h-[450px] bg-gray-900 shadow-orange-100">
+                    
+                    <div class="slide-item absolute inset-0 opacity-100 transition-opacity duration-1000 ease-in-out">
+                        <img src="uzinduziziara.jpg" alt="Uzinduzi" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-orange-950/80 via-transparent to-transparent flex items-end p-6">
+                            <p class="text-white text-xs font-bold bg-orange-600 px-3 py-1.5 rounded-md shadow-sm">1/5: Uzinduzi wa Ziara na Mafunzo Dodoma</p>
+                        </div>
+                    </div>
+
+                    <div class="slide-item absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out">
+                        <img src="picha2.jpg" alt="Mazingira" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-orange-950/80 via-transparent to-transparent flex items-end p-6">
+                            <p class="text-white text-xs font-bold bg-orange-600 px-3 py-1.5 rounded-md shadow-sm">2/5: Ziara Yangu Mti Wangu</p>
+                        </div>
+                    </div>
+
+                    <div class="slide-item absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out">
+                        <img src="picha3.jpg" alt="Biashara" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-orange-950/80 via-transparent to-transparent flex items-end p-6">
+                            <p class="text-white text-xs font-bold bg-orange-600 px-3 py-1.5 rounded-md shadow-sm">3/5: Nyanyuka Trade Network</p>
+                        </div>
+                    </div>
+
+                    <div class="slide-item absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out">
+                        <img src="picha4.jpg" alt="Urithi" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-orange-950/80 via-transparent to-transparent flex items-end p-6">
+                            <p class="text-white text-xs font-bold bg-orange-600 px-3 py-1.5 rounded-md shadow-sm">4/5: Shitaka Urithi Mazingira</p>
+                        </div>
+                    </div>
+
+                    <div class="slide-item absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out">
+                        <img src="picha5.jpg" alt="Uwezeshaji" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-orange-950/80 via-transparent to-transparent flex items-end p-6">
+                            <p class="text-white text-xs font-bold bg-orange-600 px-3 py-1.5 rounded-md shadow-sm">5/5: Uwezeshaji wa Jamii Kiuchumi</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <section class="bg-gradient-to-r from-orange-600 to-orange-800 text-white py-16 shadow-inner">
+        <div class="max-w-4xl mx-auto text-center px-6 space-y-6">
+            <h2 class="text-3xl md:text-4xl font-black uppercase tracking-tight">Kila Mchango Wako Una Nguvu ya Kubadilisha Maisha</h2>
+            <p class="text-orange-100 text-sm md:text-base max-w-2xl mx-auto leading-relaxed">
+                Mchango wako utasaidia ununuzi wa miti kwa ajili ya kulinda vyanzo vya maji, kusaidia kampeni za mazingira, na kuwawezesha kiuchumi wakulima na wafanyabiashara wadogo hapa Tanzania.
             </p>
-            <div class="flex flex-wrap gap-4 pt-2">
-                <a href="projects.html" class="bg-gray-900 text-white font-bold text-xs uppercase px-6 py-3.5 rounded-full hover:bg-orange-600 transition tracking-wider shadow-sm">
-                    Gundua Miradi Yetu
-                </a>
-                <a href="donate.html" class="border border-gray-200 text-gray-700 font-bold text-xs uppercase px-6 py-3.5 rounded-full hover:bg-gray-50 transition tracking-wider">
-                    Changia Sasa
+            <div class="pt-4">
+                <a href="donation.html" class="bg-white text-orange-600 hover:bg-gray-950 hover:text-white font-bold text-xs uppercase px-8 py-4 rounded-full transition tracking-wider shadow-lg inline-block">
+                    <i class="fa-solid fa-heart mr-1.5 text-orange-600"></i> Changia Sasa Hivi
                 </a>
             </div>
         </div>
+    </section>
 
-      <!-- SEHEMU YA SLIDE YA PICHA TANO HOME -->
-<section class="max-w-7xl mx-auto px-6 py-12 lg:py-20">
-    <div class="grid lg:grid-cols-12 gap-12 items-center">
-        
-        <!-- Maelezo ya Taasisi (Kushoto) -->
-        <div class="lg:col-span-5 space-y-6">
-            <span class="text-orange-600 font-bold uppercase text-xs tracking-wider bg-orange-100 px-3 py-1 rounded-full">
-                Nyanyuka Afrika Foundation
-            </span>
-            <h1 class="text-4xl lg:text-5xl font-black uppercase tracking-tight leading-none text-gray-950">
-                Inua Jamii, <br><span class="text-orange-600">Tunza Mazingira.</span>
-            </h1>
-            <p class="text-gray-600 text-sm leading-relaxed">
-                Tunajikita katika kuleta mabadiliko ya kiuchumi na kijamii kutoka Makao Makuu yetu Dodoma. Kupitia miradi ya uwezeshaji na utunzaji wa mazingira, tunatengeneza kesho iliyo bora.
-            </p>
-            <div class="flex gap-4 pt-2">
-                <a href="projects.html" class="bg-gray-900 text-white font-bold text-xs uppercase px-6 py-3.5 rounded-full hover:bg-orange-600 transition tracking-wider">
-                    Miradi Yetu
-                </a>
-                <a href="donation.html" class="border border-gray-200 text-gray-700 font-bold text-xs uppercase px-6 py-3.5 rounded-full hover:bg-gray-50 transition tracking-wider">
-                    Changia
-                </a>
+    <section class="py-20 bg-white border-t border-orange-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-xl mx-auto mb-16 space-y-3">
+                <span class="text-orange-600 font-bold uppercase text-xs tracking-wider">Tupo Dodoma</span>
+                <h2 class="text-3xl font-black uppercase tracking-tight">Wasiliana Nasi</h2>
+                <p class="text-gray-500 text-xs">Ukiwa na swali, maoni, au hitaji la ushirikiano, timu yetu ya makao makuu ipo tayari kukuhudumia.</p>
             </div>
-        </div>
 
-        <!-- Sehemu ya Slide ya Picha (Kulia) -->
-        <div class="lg:col-span-7">
-            <div class="relative rounded-3xl overflow-hidden shadow-lg border border-gray-100 aspect-video w-full h-[400px]">
+            <div class="grid md:grid-cols-3 gap-8 text-center">
                 
-                <!-- Picha ya 1 (Uzinduzi wa Ziara) -->
-                <div class="slide-item absolute inset-0 opacity-100 transition-opacity duration-1000 ease-in-out">
-                    <img src="uzinduziziara.jpg" alt="Uzinduzi wa Ziara" class="w-full h-full object-cover">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-6">
-                        <p class="text-white text-xs font-bold bg-black/40 px-3 py-1.5 rounded-md">1/5: Uzinduzi wa Ziara na Mafunzo Dodoma</p>
+                <div class="bg-gray-50 p-8 rounded-2xl border-t-4 border-orange-600 shadow-xs space-y-3 hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-orange-100 text-orange-600 rounded-full flex items-center justify-center mx-auto text-lg">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <h3 class="font-bold text-sm text-gray-900 uppercase tracking-tight">Ofisi na Posta</h3>
+                    <p class="text-xs text-gray-500 leading-relaxed">
+                        Bar. 9 Jengo la Cana Plaza, Dodoma Mjini.<br>
+                        <span class="font-bold text-orange-600">S.L.P 1249 Dodoma</span>
+                    </p>
+                </div>
+
+                <div class="bg-gray-50 p-8 rounded-2xl border-t-4 border-orange-600 shadow-xs space-y-3 hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-orange-100 text-orange-600 rounded-full flex items-center justify-center mx-auto text-lg">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <h3 class="font-bold text-sm text-gray-900 uppercase tracking-tight">Namba za Simu</h3>
+                    <div class="text-xs text-gray-500 flex flex-col gap-1">
+                        <a href="tel:+255659961277" class="hover:text-orange-600 font-medium">+255 659 961 277</a>
+                        <a href="tel:+255659961278" class="hover:text-orange-600 font-medium">+255 659 961 278</a>
                     </div>
                 </div>
 
-                <!-- Picha ya 2 -->
-                <div class="slide-item absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out">
-                    <img src="picha2.jpg" alt="Mradi wa Mazingira" class="w-full h-full object-cover">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-6">
-                        <p class="text-white text-xs font-bold bg-black/40 px-3 py-1.5 rounded-md">2/5: Ziara Yangu Mti Wangu</p>
+                <div class="bg-gray-50 p-8 rounded-2xl border-t-4 border-orange-600 shadow-xs space-y-3 hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-orange-100 text-orange-600 rounded-full flex items-center justify-center mx-auto text-lg">
+                        <i class="fa-solid fa-envelope"></i>
                     </div>
-                </div>
-
-                <!-- Picha ya 3 -->
-                <div class="slide-item absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out">
-                    <img src="picha3.jpg" alt="Nyanyuka Trade Network" class="w-full h-full object-cover">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-6">
-                        <p class="text-white text-xs font-bold bg-black/40 px-3 py-1.5 rounded-md">3/5: Nyanyuka Trade Network</p>
-                    </div>
-                </div>
-
-                <!-- Picha ya 4 -->
-                <div class="slide-item absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out">
-                    <img src="picha4.jpg" alt="Utunzaji wa Mazingira" class="w-full h-full object-cover">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-6">
-                        <p class="text-white text-xs font-bold bg-black/40 px-3 py-1.5 rounded-md">4/5: Shitaka Urithi Mazingira</p>
-                    </div>
-                </div>
-
-                <!-- Picha ya 5 -->
-                <div class="slide-item absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out">
-                    <img src="picha5.jpg" alt="Uwezeshaji Jamii" class="w-full h-full object-cover">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-6">
-                        <p class="text-white text-xs font-bold bg-black/40 px-3 py-1.5 rounded-md">5/5: Uwezeshaji wa Jamii Kiuchumi</p>
-                    </div>
+                    <h3 class="font-bold text-sm text-gray-900 uppercase tracking-tight">Barua Pepe</h3>
+                    <a href="mailto:nyanyukaafrikafoundation@gmail.com" class="text-xs text-gray-500 hover:text-orange-600 font-medium block overflow-hidden text-ellipsis">
+                        nyanyukaafrikafoundation@gmail.com
+                    </a>
                 </div>
 
             </div>
         </div>
-
-    </div>
-</section>
-
-<!-- JAVASCRIPT YA KUENDESHA SLIDE (Iweke chini kabisa karibu na </body>) -->
-<script>
-    let currentSlide = 0;
-    const slides = document.querySelectorAll('.slide-item');
-    
-    function showNextSlide() {
-        // Ficha picha ya sasa
-        slides[currentSlide].classList.remove('opacity-100');
-        slides[currentSlide].classList.add('opacity-0');
-        
-        // Nenda picha inayofuata (ikirudi 0 ikifika mwisho)
-        currentSlide = (currentSlide + 1) % slides.length;
-        
-        // Onyesha picha mpya
-        slides[currentSlide].classList.remove('opacity-0');
-        slides[currentSlide].classList.add('opacity-100');
-    }
-    
-    // Badilisha picha kila baada ya sekunde 4 (milisekunde 4000)
-    setInterval(showNextSlide, 4000);
-</script>
-
-    <!-- WELCOME SECTION -->
-    <section class="py-20 px-6 max-w-5xl mx-auto text-center">
-        <h2 class="text-3xl font-black mb-6">Karibu Nyanyuka Afrika Foundation</h2>
-        <p class="text-gray-600 leading-relaxed max-w-3xl mx-auto">
-            Sisi ni taasisi inayojikita katika kuleta mabadiliko chanya kwa jamii kupitia miradi ya kimkakati, 
-            kuhifadhi mazingira, na kuimarisha biashara za vijana na wanawake nchini Tanzania.
-        </p>
     </section>
 
-    <footer class="py-10 bg-gray-50 text-center text-sm text-gray-500 border-t border-orange-100">
-        &copy; 2026 Nyanyuka Afrika Foundation.
+    <footer class="py-10 bg-orange-950 text-center text-sm text-orange-200 border-t border-orange-900">
+        &copy; 2026 Nyanyuka Afrika Foundation. P.O. Box 1249, Dodoma.
     </footer>
 
-</body>
-</html>
-   <!-- DONATION CALL TO ACTION -->
-    <section class="bg-orange-600 text-white py-16">
-        <div class="max-w-4xl mx-auto px-6 text-center">
-            <h2 class="text-3xl font-black uppercase tracking-tight mb-4">Ungana Nasi Kuleta Mabadiliko</h2>
-            <p class="text-orange-100 mb-8 max-w-2xl mx-auto text-base">
-                Kila mchango wako una nguvu ya kubadilisha maisha, kuwezesha jamii kiuchumi, na kulinda urithi wa mazingira yetu. Kuwa sehemu ya safari hii ya maendeleo leo.
-            </p>
-            <a href="donate.html" class="inline-flex items-center gap-2 bg-white text-orange-600 font-bold uppercase text-sm px-8 py-4 rounded-full hover:bg-orange-50 shadow-md transition">
-                <i class="fa-solid fa-heart"></i> Changia Sasa (Donate)
-            </a>
-        </div>
-    </section>
-
-    <!-- CONTACT SECTION -->
-    <section class="py-16 bg-gray-50 border-t border-gray-100">
-        <div class="max-w-6xl mx-auto px-6">
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div>
-                    <h2 class="text-2xl font-bold uppercase tracking-tight mb-4">Wasiliana Nasi</h2>
-                    <p class="text-gray-600 mb-6">Je, una maswali, maoni au ungependa kushirikiana nasi? Timu yetu ipo tayari kusikia kutoka kwako.</p>
-                    <div class="space-y-4 text-sm font-medium text-gray-700">
-                        <div class="flex items-center gap-3">
-                            <i class="fa-solid fa-envelope text-orange-600 text-base w-5"></i>
-                            <span>info@nyanyukaafrika.or.tz</span>
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <i class="fa-solid fa-phone text-orange-600 text-base w-5"></i>
-                            <span>+255 (0) 123 456 789</span>
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <i class="fa-solid fa-location-dot text-orange-600 text-base w-5"></i>
-                            <span>Dodoma, Tanzania</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-white p-8 rounded-2xl border border-gray-200/60 shadow-sm">
-                    <h3 class="font-bold text-lg mb-4">Tuma Ujumbe wa Haraka</h3>
-                    <form action="#" class="space-y-4">
-                        <input type="text" placeholder="Jina Lako" class="w-full px-4 py-2.5 text-sm rounded-xl border border-gray-200 focus:outline-none focus:border-orange-500">
-                        <input type="email" placeholder="Barua Pepe" class="w-full px-4 py-2.5 text-sm rounded-xl border border-gray-200 focus:outline-none focus:border-orange-500">
-                        <textarea placeholder="Ujumbe Wako..." rows="3" class="w-full px-4 py-2.5 text-sm rounded-xl border border-gray-200 focus:outline-none focus:border-orange-500"></textarea>
-                        <button type="submit" class="w-full bg-gray-900 text-white font-bold text-xs uppercase py-3 rounded-xl hover:bg-orange-600 transition tracking-wider">Tuma Ujumbe</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="py-10 bg-white text-center text-sm text-gray-500 border-t border-gray-100">
-        &copy; 2026 Nyanyuka Afrika Foundation.
-    </footer>
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide-item');
+        
+        function showNextSlide() {
+            if(slides.length === 0) return;
+            slides[currentSlide].classList.remove('opacity-100');
+            slides[currentSlide].classList.add('opacity-0');
+            
+            currentSlide = (currentSlide + 1) % slides.length;
+            
+            slides[currentSlide].classList.remove('opacity-0');
+            slides[currentSlide].classList.add('opacity-100');
+        }
+        
+        setInterval(showNextSlide, 4000);
+    </script>
 
 </body>
 </html>
