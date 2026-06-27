@@ -144,8 +144,8 @@
         </div>
     </section>
 
-    <!-- SEHEMU MPYA: OUR IMPACTS (MATOKEO YETU) -->
-    <section class="py-20 bg-gray-100 border-y border-gray-200">
+    <!-- SEHEMU YA: OUR IMPACTS (MATOKEO YETU yenye Counter Play) -->
+    <section id="impacts-section" class="py-20 bg-gray-100 border-y border-gray-200">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
                 <span class="text-orange-600 font-bold uppercase text-xs tracking-widest block">Tunachokifanya kwa Vitendo</span>
@@ -162,7 +162,9 @@
                         <i class="fa-solid fa-tree"></i>
                     </div>
                     <div class="space-y-1">
-                        <h3 class="text-3xl font-black text-gray-950 tracking-tight">2,000+</h3>
+                        <h3 class="text-3xl font-black text-gray-950 tracking-tight flex justify-center items-center">
+                            <span class="counter" data-target="2000">0</span>+
+                        </h3>
                         <p class="text-orange-600 font-bold uppercase text-[11px] tracking-wider">Miti Iliyopandwa</p>
                     </div>
                     <p class="text-gray-500 text-xs leading-relaxed">Kupitia kampeni ya "Ziara Yangu Mti Wangu" kulinda ikolojia na vyanzo vya maji.</p>
@@ -174,7 +176,9 @@
                         <i class="fa-solid fa-users"></i>
                     </div>
                     <div class="space-y-1">
-                        <h3 class="text-3xl font-black text-gray-950 tracking-tight">500+</h3>
+                        <h3 class="text-3xl font-black text-gray-950 tracking-tight flex justify-center items-center">
+                            <span class="counter" data-target="500">0</span>+
+                        </h3>
                         <p class="text-orange-600 font-bold uppercase text-[11px] tracking-wider">Vijana & Wanawake</p>
                     </div>
                     <p class="text-gray-500 text-xs leading-relaxed">Wamefikiwa na kuwezeshwa kiuchumi kupitia mitandao ya biashara na mafunzo.</p>
@@ -186,7 +190,9 @@
                         <i class="fa-solid fa-scale-balanced"></i>
                     </div>
                     <div class="space-y-1">
-                        <h3 class="text-3xl font-black text-gray-950 tracking-tight">150+</h3>
+                        <h3 class="text-3xl font-black text-gray-950 tracking-tight flex justify-center items-center">
+                            <span class="counter" data-target="150">0</span>+
+                        </h3>
                         <p class="text-orange-600 font-bold uppercase text-[11px] tracking-wider">Msaada wa Kisheria</p>
                     </div>
                     <p class="text-gray-500 text-xs leading-relaxed">Wananchi waliopata uelewa wa haki zao kupitia kampeni zetu za kisheria mitaani.</p>
@@ -198,7 +204,7 @@
                         <i class="fa-solid fa-arrow-trend-up"></i>
                     </div>
                     <div class="space-y-1">
-                        <h3 class="text-3xl font-black text-gray-950 tracking-tight">Tunaendelea</h3>
+                        <h3 class="text-2xl font-black text-gray-950 tracking-tight py-1">Tunaendelea</h3>
                         <p class="text-orange-600 font-bold uppercase text-[11px] tracking-wider">Kila Siku</p>
                     </div>
                     <p class="text-gray-500 text-xs leading-relaxed">Kuongeza kasi ya miradi mipya ili kuwafikia watu wengi zaidi nchini kote.</p>
@@ -267,7 +273,7 @@
 
             </div>
 
-            <!-- Group 2 (Nakala kwa ajili ya kufanya slide iwe endelevu bila kukatika) -->
+            <!-- Group 2 -->
             <div class="absolute top-6 left-0 animate-marquee2 flex whitespace-nowrap items-center gap-12 min-w-full justify-around pr-12" aria-hidden="true">
                 
                 <!-- TFS -->
@@ -353,8 +359,9 @@
         &copy; 2026 Nyanyuka Afrika Foundation. Dodoma, Tanzania.
     </footer>
 
-    <!-- JAVASCRIPT YA KUENDESHA SLIDE -->
+    <!-- JAVASCRIPT YA SLIDESHOW NA ANIMATED COUNTERS -->
     <script>
+        // 1. Script ya Slideshow ya Kawaida
         let currentSlide = 0;
         const slides = document.querySelectorAll('.slide-item');
         
@@ -368,8 +375,47 @@
             slides[currentSlide].classList.remove('opacity-0');
             slides[currentSlide].classList.add('opacity-100');
         }
-        
         setInterval(showNextSlide, 5000);
+
+        // 2. Script ya Namba Kucheza (Animated Counter)
+        const counters = document.querySelectorAll('.counter');
+        const speed = 150; // Kasi ya kuhesabu (Namba ndogo = Kasi zaidi)
+
+        const startCounting = (counter) => {
+            const updateCount = () => {
+                const target = +counter.getAttribute('data-target');
+                const count = +counter.innerText;
+                const inc = Math.ceil(target / speed);
+
+                if (count < target) {
+                    counter.innerText = count + inc > target ? target : count + inc;
+                    setTimeout(updateCount, 15);
+                } else {
+                    counter.innerText = target;
+                }
+            };
+            updateCount();
+        };
+
+        // Kutumia Intersection Observer ili hesabu ianze pale tu mtumiaji anapofikia block hiyo
+        const observerOptions = {
+            root: null,
+            threshold: 0.2 // Ikiingia 20% kwenye screen ianze ku-play
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    counters.forEach(counter => startCounting(counter));
+                    observer.unobserve(entry.target); // Isirudie tena baada ya ku-play mara moja
+                }
+            });
+        }, observerOptions);
+
+        const targetSection = document.getElementById('impacts-section');
+        if (targetSection) {
+            observer.observe(targetSection);
+        }
     </script>
 
 </body>
