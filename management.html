@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meet the Management | Nyanyuka Afrika Foundation</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link class="peer" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body class="bg-gray-50 text-gray-900 antialiased">
 
+    <!-- MENU YA JUU (NAVBAR) -->
     <nav class="bg-orange-600 shadow-md sticky top-0 z-50 border-b border-orange-700">
         <div class="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between">
             <a href="index.html" class="flex items-center bg-white rounded-xl p-1 shadow-md">
@@ -26,7 +27,9 @@
         </div>
     </nav>
 
+    <!-- SEHEMU YA HERO -->
     <header class="relative w-full h-[50vh] md:h-[60vh] bg-gray-950 overflow-hidden">
+        <!-- PICHA YA SLIDE 1 -->
         <div class="slide-item absolute inset-0 opacity-100 transition-opacity duration-1000 ease-in-out">
             <img src="image/uzinduziziara.jpg" alt="Uongozi wetu" class="w-full h-full object-cover">
             <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-orange-950/40 to-black/70 flex items-center justify-center text-center p-6">
@@ -44,6 +47,7 @@
             </div>
         </div>
 
+        <!-- PICHA YA SLIDE 2 -->
         <div class="slide-item absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out">
             <img src="upandaji.jpeg" alt="Timu ya Nyanyuka" class="w-full h-full object-cover">
             <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-orange-950/40 to-black/70 flex items-center justify-center text-center p-6">
@@ -62,66 +66,75 @@
         </div>
     </header>
 
+    <!-- TIMU YA UONGOZI -->
     <main class="max-w-6xl mx-auto px-6 py-20 space-y-24">
 
+        <!-- LEVEL 1: EXECUTIVE LEADERSHIP -->
         <section>
-            <div class="space-y-2 mb-10 text-center md:text-left">
+            <div class="space-y-2 mb-12 text-center md:text-left">
                 <span class="text-orange-600 font-bold uppercase text-xs tracking-wider block">Watekelezaji Wakuu</span>
                 <h2 class="text-2xl md:text-3xl font-black uppercase tracking-tight">Executive Leadership</h2>
                 <div class="h-1 w-20 bg-orange-600 mx-auto md:mx-0 rounded-full"></div>
             </div>
 
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="flex flex-col sm:flex-row items-center gap-6 p-8 bg-white border border-orange-100 rounded-2xl shadow-xs hover:shadow-md transition group">
-                    <div class="w-28 h-28 bg-gray-100 rounded-xl overflow-hidden shrink-0 border border-gray-200">
-                        <img src="viongozi/dotto_masulubu.png" alt="Dotto Stephen Masulubu" class="w-full h-full object-cover">
+            <div class="space-y-8">
+                <!-- 1. Bi Kulwa (Mwenyekiti) -->
+                <div class="flex flex-col md:flex-row items-center gap-8 p-8 bg-white border-2 border-orange-500 rounded-3xl shadow-sm hover:shadow-lg transition group max-w-4xl mx-auto">
+                    <div class="w-36 h-36 md:w-44 md:h-44 bg-gray-100 rounded-2xl overflow-hidden shrink-0 border-2 border-orange-200 shadow-sm">
+                        <img src="viongozi/kulwa_masulubu.png" alt="Bi Kulwa Stephen Masulubu" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
                     </div>
-                    <div class="text-center sm:text-left space-y-2 w-full">
+                    <div class="text-center md:text-left space-y-3 w-full">
                         <div>
-                            <h3 class="text-xl font-black text-gray-950">Dotto Stephen Masulubu</h3>
-                            <p class="text-orange-600 font-bold uppercase text-xs tracking-wide">Founder & Chief Executive Officer</p>
+                            <span class="bg-orange-100 text-orange-700 text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-md mb-1 inline-block">Top Leadership</span>
+                            <h3 class="text-2xl font-black text-gray-950">Bi Kulwa Stephen Masulubu</h3>
+                            <p class="text-orange-600 font-bold uppercase text-sm tracking-wide mt-0.5">Mwenyekiti wa Bodi ya Wakurugenzi</p>
                         </div>
-                        <p class="text-gray-500 text-xs leading-relaxed">Kiongozi mkuu na msimamizi mkuu wa utendaji na dira ya taasisi tanzu na miradi yote.</p>
-                        <div class="flex justify-center sm:justify-start gap-3 text-xs pt-1">
-                            <a href="tel:+255659961277" class="text-gray-500 hover:text-orange-600 transition flex items-center gap-1 font-bold"><i class="fa-solid fa-phone text-orange-500"></i> Piga</a>
+                        <p class="text-gray-600 text-sm leading-relaxed max-w-2xl">Msimamizi mkuu na kiongozi wa bodi katika kusimamia mipango mikakati, sera kuu za taasisi na uelekeo wa maendeleo wa muda mrefu wa taasisi.</p>
+                        <div class="flex justify-center md:justify-start gap-4 text-xs pt-1 font-bold">
+                            <a href="tel:+255XXXXXXXXX" class="text-gray-600 hover:text-orange-600 transition flex items-center gap-1.5"><i class="fa-solid fa-phone text-orange-500"></i> Piga Simu</a>
                             <span class="text-gray-300">|</span>
-                            <a href="mailto:nyanyukaafrikafoundation@gmail.com" class="text-gray-500 hover:text-orange-600 transition flex items-center gap-1 font-bold"><i class="fa-solid fa-envelope text-orange-500"></i> Email</a>
+                            <a href="mailto:kulwa@nyanyukaafrika.or.tz" class="text-gray-600 hover:text-orange-600 transition flex items-center gap-1.5"><i class="fa-solid fa-envelope text-orange-500"></i> Barua Pepe</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="flex flex-col sm:flex-row items-center gap-6 p-8 bg-white border border-gray-100 rounded-2xl shadow-xs hover:shadow-md transition group">
-                    <div class="w-28 h-28 bg-gray-100 rounded-xl overflow-hidden shrink-0 border border-gray-200">
-                        <img src="viongozi/kulwa_masulubu.png" alt="Bi Kulwa Stephen Masulubu" class="w-full h-full object-cover">
-                    </div>
-                    <div class="text-center sm:text-left space-y-2 w-full">
-                        <div>
-                            <h3 class="text-xl font-black text-gray-950">Bi Kulwa Stephen Masulubu</h3>
-                            <p class="text-orange-600 font-bold uppercase text-xs tracking-wide">Mwenyekiti wa Executive Leadership</p>
+                <!-- Chini yake: Dotto na Sarah -->
+                <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    <!-- 2. Dotto (CEO) -->
+                    <div class="flex flex-col sm:flex-row items-center gap-6 p-6 bg-white border border-gray-100 rounded-2xl shadow-xs hover:shadow-md transition group">
+                        <div class="w-36 h-36 bg-gray-100 rounded-xl overflow-hidden shrink-0 border border-gray-200 shadow-xs">
+                            <img src="viongozi/dotto_masulubu.png" alt="Dotto Stephen Masulubu" class="w-full h-full object-cover">
                         </div>
-                        <p class="text-gray-500 text-xs leading-relaxed">Msimamizi mwenza wa mipango mikakati, sera za taasisi na uelekeo mkuu wa kimaendeleo.</p>
-                        <div class="flex justify-center sm:justify-start gap-3 text-xs pt-1">
-                            <a href="tel:+255XXXXXXXXX" class="text-gray-500 hover:text-orange-600 transition flex items-center gap-1 font-bold"><i class="fa-solid fa-phone text-orange-500"></i> Piga</a>
-                            <span class="text-gray-300">|</span>
-                            <a href="mailto:kulwa@nyanyukaafrika.or.tz" class="text-gray-500 hover:text-orange-600 transition flex items-center gap-1 font-bold"><i class="fa-solid fa-envelope text-orange-500"></i> Email</a>
+                        <div class="text-center sm:text-left space-y-2 w-full">
+                            <div>
+                                <h3 class="text-xl font-black text-gray-950">Dotto Stephen Masulubu</h3>
+                                <p class="text-orange-600 font-bold uppercase text-xs tracking-wide">Founder & Chief Executive Officer</p>
+                            </div>
+                            <p class="text-gray-500 text-xs leading-relaxed">Kiongozi mkuu na msimamizi mkuu wa utendaji wa kila siku na utekelezaji wa dira ya taasisi.</p>
+                            <div class="flex justify-center sm:justify-start gap-3 text-xs pt-1 font-bold">
+                                <a href="tel:+255659961277" class="text-gray-500 hover:text-orange-600 transition flex items-center gap-1"><i class="fa-solid fa-phone text-orange-500"></i> Piga</a>
+                                <span class="text-gray-300">|</span>
+                                <a href="mailto:nyanyukaafrikafoundation@gmail.com" class="text-gray-500 hover:text-orange-600 transition flex items-center gap-1"><i class="fa-solid fa-envelope text-orange-500"></i> Email</a>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="flex flex-col sm:flex-row items-center gap-6 p-8 bg-white border border-gray-100 rounded-2xl shadow-xs hover:shadow-md transition group md:col-span-2 md:max-w-xl md:mx-auto w-full">
-                    <div class="w-28 h-28 bg-gray-100 rounded-xl overflow-hidden shrink-0 border border-gray-200">
-                        <img src="viongozi/sarah_nyadu.png" alt="Sarah Marco Nyadu" class="w-full h-full object-cover">
-                    </div>
-                    <div class="text-center sm:text-left space-y-2 w-full">
-                        <div>
-                            <h3 class="text-xl font-black text-gray-950">Sarah Marco Nyadu</h3>
-                            <p class="text-gray-600 font-bold uppercase text-xs tracking-wide">General Secretary</p>
+                    <!-- 3. Sarah (General Secretary) -->
+                    <div class="flex flex-col sm:flex-row items-center gap-6 p-6 bg-white border border-gray-100 rounded-2xl shadow-xs hover:shadow-md transition group">
+                        <div class="w-36 h-36 bg-gray-100 rounded-xl overflow-hidden shrink-0 border border-gray-200 shadow-xs">
+                            <img src="viongozi/sarah_nyadu.png" alt="Sarah Marco Nyadu" class="w-full h-full object-cover">
                         </div>
-                        <p class="text-gray-500 text-xs leading-relaxed">Msimamizi mkuu wa uendeshaji wa kiofisi, uratibu wa nyaraka rasmi na itifaki za taasisi.</p>
-                        <div class="flex justify-center sm:justify-start gap-3 text-xs pt-1">
-                            <a href="tel:+255XXXXXXXXX" class="text-gray-500 hover:text-orange-600 transition flex items-center gap-1 font-bold"><i class="fa-solid fa-phone text-gray-500"></i> Piga</a>
-                            <span class="text-gray-300">|</span>
-                            <a href="mailto:sarah@nyanyukaafrika.or.tz" class="text-gray-500 hover:text-orange-600 transition flex items-center gap-1 font-bold"><i class="fa-solid fa-envelope text-gray-500"></i> Email</a>
+                        <div class="text-center sm:text-left space-y-2 w-full">
+                            <div>
+                                <h3 class="text-xl font-black text-gray-950">Sarah Marco Nyadu</h3>
+                                <p class="text-orange-600 font-bold uppercase text-xs tracking-wide">General Secretary</p>
+                            </div>
+                            <p class="text-gray-500 text-xs leading-relaxed">Msimamizi mkuu wa uendeshaji wa kiofisi, uratibu wa nyaraka rasmi na itifaki za taasisi.</p>
+                            <div class="flex justify-center sm:justify-start gap-3 text-xs pt-1 font-bold">
+                                <a href="tel:+255XXXXXXXXX" class="text-gray-500 hover:text-orange-600 transition flex items-center gap-1"><i class="fa-solid fa-phone text-orange-500"></i> Piga</a>
+                                <span class="text-gray-300">|</span>
+                                <a href="mailto:sarah@nyanyukaafrika.or.tz" class="text-gray-500 hover:text-orange-600 transition flex items-center gap-1"><i class="fa-solid fa-envelope text-orange-500"></i> Email</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -129,6 +142,7 @@
         </section>
 
 
+        <!-- LEVEL 2: WAKURUGENZI WA IDARA (DIRECTORATE) -->
         <section>
             <div class="space-y-2 mb-10 text-center md:text-left">
                 <span class="text-orange-600 font-bold uppercase text-xs tracking-wider block">Wakurugenzi Wakuu wa Idara</span>
@@ -137,9 +151,10 @@
             </div>
 
             <div class="grid md:grid-cols-3 gap-6">
-                <div class="bg-white p-6 border border-gray-100 rounded-2xl text-center shadow-xs hover:shadow-md transition border-t-4 border-t-orange-600 flex flex-col justify-between min-h-[340px]">
+                <!-- Finance -->
+                <div class="bg-white p-6 border border-gray-100 rounded-2xl text-center shadow-xs hover:shadow-md transition border-t-4 border-t-orange-600 flex flex-col justify-between min-h-[380px]">
                     <div class="space-y-4">
-                        <div class="w-24 h-24 bg-gray-100 rounded-full overflow-hidden mx-auto border-2 border-orange-100">
+                        <div class="w-36 h-36 bg-gray-100 rounded-full overflow-hidden mx-auto border-2 border-orange-100 shadow-xs">
                             <img src="viongozi/charles_laiser.png" alt="Charles D. Laiser" class="w-full h-full object-cover">
                         </div>
                         <div>
@@ -148,15 +163,16 @@
                         </div>
                         <p class="text-gray-500 text-xs leading-relaxed">Anasimamia mifango yote ya rasilimali fedha, bajeti, na usimamizi wa kiutawala.</p>
                     </div>
-                    <div class="flex justify-center gap-4 text-xs pt-4 border-t border-gray-100 mt-4">
-                        <a href="tel:+255XXXXXXXXX" class="text-gray-500 hover:text-orange-600 transition font-bold"><i class="fa-solid fa-phone text-orange-500"></i> Piga</a>
-                        <a href="mailto:charles@nyanyukaafrika.or.tz" class="text-gray-500 hover:text-orange-600 transition font-bold"><i class="fa-solid fa-envelope text-orange-500"></i> Email</a>
+                    <div class="flex justify-center gap-4 text-xs pt-4 border-t border-gray-100 mt-4 font-bold">
+                        <a href="tel:+255XXXXXXXXX" class="text-gray-500 hover:text-orange-600 transition"><i class="fa-solid fa-phone text-orange-500"></i> Piga</a>
+                        <a href="mailto:charles@nyanyukaafrika.or.tz" class="text-gray-500 hover:text-orange-600 transition"><i class="fa-solid fa-envelope text-orange-500"></i> Email</a>
                     </div>
                 </div>
 
-                <div class="bg-white p-6 border border-gray-100 rounded-2xl text-center shadow-xs hover:shadow-md transition border-t-4 border-t-orange-600 flex flex-col justify-between min-h-[340px]">
+                <!-- Community Development & Projects -->
+                <div class="bg-white p-6 border border-gray-100 rounded-2xl text-center shadow-xs hover:shadow-md transition border-t-4 border-t-orange-600 flex flex-col justify-between min-h-[380px]">
                     <div class="space-y-4">
-                        <div class="w-24 h-24 bg-gray-100 rounded-full overflow-hidden mx-auto border-2 border-orange-100">
+                        <div class="w-36 h-36 bg-gray-100 rounded-full overflow-hidden mx-auto border-2 border-orange-100 shadow-xs">
                             <img src="viongozi/albert_sengelema.png" alt="Albert Manyilizu Sengerema" class="w-full h-full object-cover">
                         </div>
                         <div>
@@ -165,15 +181,16 @@
                         </div>
                         <p class="text-gray-500 text-xs leading-relaxed">Mratibu mkuu wa miradi ya maendeleo ya kijamii, mifumo ya nyanjani na tathmini.</p>
                     </div>
-                    <div class="flex justify-center gap-4 text-xs pt-4 border-t border-gray-100 mt-4">
-                        <a href="tel:+255XXXXXXXXX" class="text-gray-500 hover:text-orange-600 transition font-bold"><i class="fa-solid fa-phone text-orange-500"></i> Piga</a>
-                        <a href="mailto:albert@nyanyukaafrika.or.tz" class="text-gray-500 hover:text-orange-600 transition font-bold"><i class="fa-solid fa-envelope text-orange-500"></i> Email</a>
+                    <div class="flex justify-center gap-4 text-xs pt-4 border-t border-gray-100 mt-4 font-bold">
+                        <a href="tel:+255XXXXXXXXX" class="text-gray-500 hover:text-orange-600 transition"><i class="fa-solid fa-phone text-orange-500"></i> Piga</a>
+                        <a href="mailto:albert@nyanyukaafrika.or.tz" class="text-gray-500 hover:text-orange-600 transition"><i class="fa-solid fa-envelope text-orange-500"></i> Email</a>
                     </div>
                 </div>
 
-                <div class="bg-white p-6 border border-gray-100 rounded-2xl text-center shadow-xs hover:shadow-md transition border-t-4 border-t-orange-600 flex flex-col justify-between min-h-[340px]">
+                <!-- Communications & PR -->
+                <div class="bg-white p-6 border border-gray-100 rounded-2xl text-center shadow-xs hover:shadow-md transition border-t-4 border-t-orange-600 flex flex-col justify-between min-h-[380px]">
                     <div class="space-y-4">
-                        <div class="w-24 h-24 bg-gray-100 rounded-full overflow-hidden mx-auto border-2 border-orange-100">
+                        <div class="w-36 h-36 bg-gray-100 rounded-full overflow-hidden mx-auto border-2 border-orange-100 shadow-xs">
                             <img src="viongozi/stephen_ishungisa.png" alt="Stephen Ishungisa" class="w-full h-full object-cover">
                         </div>
                         <div>
@@ -182,15 +199,16 @@
                         </div>
                         <p class="text-gray-500 text-xs leading-relaxed">Mkuu wa mahusiano kwa umma, mawasiliano ya kimkakati na ujenzi wa chapa ya taasisi.</p>
                     </div>
-                    <div class="flex justify-center gap-4 text-xs pt-4 border-t border-gray-100 mt-4">
-                        <a href="tel:+255XXXXXXXXX" class="text-gray-500 hover:text-orange-600 transition font-bold"><i class="fa-solid fa-phone text-orange-500"></i> Piga</a>
-                        <a href="mailto:stephen@nyanyukaafrika.or.tz" class="text-gray-500 hover:text-orange-600 transition font-bold"><i class="fa-solid fa-envelope text-orange-500"></i> Email</a>
+                    <div class="flex justify-center gap-4 text-xs pt-4 border-t border-gray-100 mt-4 font-bold">
+                        <a href="tel:+255XXXXXXXXX" class="text-gray-500 hover:text-orange-600 transition"><i class="fa-solid fa-phone text-orange-500"></i> Piga</a>
+                        <a href="mailto:stephen@nyanyukaafrika.or.tz" class="text-gray-500 hover:text-orange-600 transition"><i class="fa-solid fa-envelope text-orange-500"></i> Email</a>
                     </div>
                 </div>
             </div>
         </section>
 
 
+        <!-- LEVEL 3: WAKUU WA VITENGO MAALUM (DEPARTMENTS / HEADS) -->
         <section>
             <div class="space-y-2 mb-10 text-center md:text-left">
                 <span class="text-orange-600 font-bold uppercase text-xs tracking-wider block">Wakuu wa Vitengo Maalum</span>
@@ -199,8 +217,9 @@
             </div>
 
             <div class="grid md:grid-cols-2 gap-8">
+                <!-- TEHAMA na Mawasiliano -->
                 <div class="flex flex-col sm:flex-row items-center gap-5 p-6 bg-white border border-gray-100 rounded-2xl shadow-xs hover:shadow-md transition">
-                    <div class="w-24 h-24 bg-gray-100 rounded-xl overflow-hidden shrink-0 border border-gray-200">
+                    <div class="w-36 h-36 bg-gray-100 rounded-xl overflow-hidden shrink-0 border border-gray-200 shadow-xs">
                         <img src="viongozi/gidai_kibiriti.png" alt="Gidai Kibiriti" class="w-full h-full object-cover">
                     </div>
                     <div class="space-y-2 w-full text-center sm:text-left">
@@ -209,16 +228,17 @@
                             <p class="text-orange-600 font-bold text-[11px] uppercase tracking-wider">Meneja Mkuu - Kitengo cha TEHAMA & Mawasiliano</p>
                         </div>
                         <p class="text-gray-500 text-xs">Msimamizi wa mifumo ya kidijitali, usalama wa taarifa, na miundombinu ya kiteknolojia ya taasisi.</p>
-                        <div class="flex justify-center sm:justify-start gap-3 text-xs pt-1">
-                            <a href="tel:+255XXXXXXXXX" class="text-gray-500 hover:text-orange-600 transition font-bold"><i class="fa-solid fa-phone text-orange-500"></i> Piga</a>
+                        <div class="flex justify-center sm:justify-start gap-3 text-xs pt-1 font-bold">
+                            <a href="tel:+255XXXXXXXXX" class="text-gray-500 hover:text-orange-600 transition"><i class="fa-solid fa-phone text-orange-500"></i> Piga</a>
                             <span class="text-gray-300">|</span>
-                            <a href="mailto:gidai@nyanyukaafrika.or.tz" class="text-gray-500 hover:text-orange-600 transition font-bold"><i class="fa-solid fa-envelope text-orange-500"></i> Email</a>
+                            <a href="mailto:gidai@nyanyukaafrika.or.tz" class="text-gray-500 hover:text-orange-600 transition"><i class="fa-solid fa-envelope text-orange-500"></i> Email</a>
                         </div>
                     </div>
                 </div>
 
+                <!-- Elimu, Mafunzo na Uchechemuzi -->
                 <div class="flex flex-col sm:flex-row items-center gap-5 p-6 bg-white border border-gray-100 rounded-2xl shadow-xs hover:shadow-md transition">
-                    <div class="w-24 h-24 bg-gray-100 rounded-xl overflow-hidden shrink-0 border border-gray-200">
+                    <div class="w-36 h-36 bg-gray-100 rounded-xl overflow-hidden shrink-0 border border-gray-200 shadow-xs">
                         <img src="viongozi/godfrey_kiluga.png" alt="Godfrey Kiluga" class="w-full h-full object-cover">
                     </div>
                     <div class="space-y-2 w-full text-center sm:text-left">
@@ -227,10 +247,10 @@
                             <p class="text-orange-600 font-bold text-[11px] uppercase tracking-wider">Meneja Mkuu - Kitengo cha Elimu, Mafunzo & Uchechemuzi</p>
                         </div>
                         <p class="text-gray-500 text-xs">Mratibu wa programu za uwezeshaji wananchi kupitia mafunzo, elimu ya uraia, na utetezi wa haki (Advocacy).</p>
-                        <div class="flex justify-center sm:justify-start gap-3 text-xs pt-1">
-                            <a href="tel:+255XXXXXXXXX" class="text-gray-500 hover:text-orange-600 transition font-bold"><i class="fa-solid fa-phone text-orange-500"></i> Piga</a>
+                        <div class="flex justify-center sm:justify-start gap-3 text-xs pt-1 font-bold">
+                            <a href="tel:+255XXXXXXXXX" class="text-gray-500 hover:text-orange-600 transition"><i class="fa-solid fa-phone text-orange-500"></i> Piga</a>
                             <span class="text-gray-300">|</span>
-                            <a href="mailto:godfrey@nyanyukaafrika.or.tz" class="text-gray-500 hover:text-orange-600 transition font-bold"><i class="fa-solid fa-envelope text-orange-500"></i> Email</a>
+                            <a href="mailto:godfrey@nyanyukaafrika.or.tz" class="text-gray-500 hover:text-orange-600 transition"><i class="fa-solid fa-envelope text-orange-500"></i> Email</a>
                         </div>
                     </div>
                 </div>
@@ -238,6 +258,7 @@
         </section>
 
 
+        <!-- LEVEL 4: UONGOZI WA KANDA (REGIONAL MANAGEMENT) -->
         <section>
             <div class="space-y-2 mb-10 text-center md:text-left">
                 <span class="text-orange-600 font-bold uppercase text-xs tracking-wider block">Usimamizi wa Kimaeneo</span>
@@ -246,36 +267,38 @@
             </div>
 
             <div class="grid md:grid-cols-2 gap-8">
+                <!-- Kanda ya Kati Dodoma -->
                 <div class="bg-white p-6 border border-gray-200 rounded-2xl flex flex-col sm:flex-row items-center gap-5 shadow-xs relative overflow-hidden">
                     <div class="absolute top-0 right-0 bg-gray-950 text-white font-bold text-[9px] uppercase px-3 py-1 rounded-bl-lg tracking-wider">Kanda ya Kati</div>
-                    <div class="w-24 h-24 bg-gray-100 rounded-xl overflow-hidden shrink-0 border border-gray-200">
+                    <div class="w-36 h-36 bg-gray-100 rounded-xl overflow-hidden shrink-0 border border-gray-200 shadow-xs">
                         <img src="viongozi/tausi_jumanne.png" alt="Tausi Jumanne" class="w-full h-full object-cover">
                     </div>
                     <div class="space-y-1 w-full text-center sm:text-left">
                         <h4 class="text-base font-black text-gray-950">Tausi Jumanne</h4>
                         <p class="text-orange-600 font-bold text-xs">Meneja Mkuu (Dodoma)</p>
                         <p class="text-gray-500 text-xs pt-1">Msimamizi mkuu wa uendeshaji wa miradi na ofisi za Kanda ya Kati.</p>
-                        <div class="flex justify-center sm:justify-start gap-3 text-xs pt-3">
-                            <a href="tel:+255XXXXXXXXX" class="text-gray-500 hover:text-orange-600 transition font-bold text-[11px]"><i class="fa-solid fa-phone text-orange-500"></i> Piga</a>
+                        <div class="flex justify-center sm:justify-start gap-3 text-xs pt-3 font-bold">
+                            <a href="tel:+255XXXXXXXXX" class="text-gray-500 hover:text-orange-600 transition text-[11px]"><i class="fa-solid fa-phone text-orange-500"></i> Piga</a>
                             <span class="text-gray-300">|</span>
-                            <a href="mailto:tausi@nyanyukaafrika.or.tz" class="text-gray-500 hover:text-orange-600 transition font-bold text-[11px]"><i class="fa-solid fa-envelope text-orange-500"></i> Email</a>
+                            <a href="mailto:tausi@nyanyukaafrika.or.tz" class="text-gray-500 hover:text-orange-600 transition text-[11px]"><i class="fa-solid fa-envelope text-orange-500"></i> Email</a>
                         </div>
                     </div>
                 </div>
 
+                <!-- Kanda ya Ziwa -->
                 <div class="bg-white p-6 border border-gray-200 rounded-2xl flex flex-col sm:flex-row items-center gap-5 shadow-xs relative overflow-hidden">
                     <div class="absolute top-0 right-0 bg-gray-950 text-white font-bold text-[9px] uppercase px-3 py-1 rounded-bl-lg tracking-wider">Kanda ya Ziwa</div>
-                    <div class="w-24 h-24 bg-gray-100 rounded-xl overflow-hidden shrink-0 border border-gray-200">
+                    <div class="w-36 h-36 bg-gray-100 rounded-xl overflow-hidden shrink-0 border border-gray-200 shadow-xs">
                         <img src="viongozi/neema_magoso.png" alt="Neema John Magoso" class="w-full h-full object-cover">
                     </div>
                     <div class="space-y-1 w-full text-center sm:text-left">
                         <h4 class="text-base font-black text-gray-950">Neema John Magoso</h4>
                         <p class="text-orange-600 font-bold text-xs">Meneja Mkuu (Lake Zone)</p>
                         <p class="text-gray-500 text-xs pt-1">Msimamizi mkuu wa utekelezaji wa malengo ya taasisi katika mikoa ya Kanda ya Ziwa.</p>
-                        <div class="flex justify-center sm:justify-start gap-3 text-xs pt-3">
-                            <a href="tel:+255XXXXXXXXX" class="text-gray-500 hover:text-orange-600 transition font-bold text-[11px]"><i class="fa-solid fa-phone text-orange-500"></i> Piga</a>
+                        <div class="flex justify-center sm:justify-start gap-3 text-xs pt-3 font-bold">
+                            <a href="tel:+255XXXXXXXXX" class="text-gray-500 hover:text-orange-600 transition text-[11px]"><i class="fa-solid fa-phone text-orange-500"></i> Piga</a>
                             <span class="text-gray-300">|</span>
-                            <a href="mailto:neema@nyanyukaafrika.or.tz" class="text-gray-500 hover:text-orange-600 transition font-bold text-[11px]"><i class="fa-solid fa-envelope text-orange-500"></i> Email</a>
+                            <a href="mailto:neema@nyanyukaafrika.or.tz" class="text-gray-500 hover:text-orange-600 transition text-[11px]"><i class="fa-solid fa-envelope text-orange-500"></i> Email</a>
                         </div>
                     </div>
                 </div>
@@ -284,6 +307,7 @@
 
     </main>
 
+    <!-- SEHEMU YA: HAMASA ZA DONATION -->
     <section class="bg-gradient-to-r from-orange-600 to-orange-800 text-white py-20 relative overflow-hidden">
         <div class="max-w-4xl mx-auto text-center px-6 space-y-6 relative z-10">
             <span class="bg-gray-950/40 text-orange-200 text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full inline-block">
@@ -301,6 +325,7 @@
         </div>
     </section>
 
+    <!-- SEHEMU YA MAWASILIANO -->
     <section class="py-16 bg-gray-50 border-t border-gray-100">
         <div class="max-w-6xl mx-auto px-6">
             <div class="grid md:grid-cols-2 gap-12 items-center">
@@ -338,10 +363,12 @@
         </div>
     </section>
 
+    <!-- FOOTER -->
     <footer class="py-8 bg-orange-950 text-center text-xs text-orange-200">
         &copy; 2026 Nyanyuka Afrika Foundation. Dodoma, Tanzania.
     </footer>
 
+    <!-- JAVASCRIPT YA SLIDE -->
     <script>
         let currentSlide = 0;
         const slides = document.querySelectorAll('.slide-item');
