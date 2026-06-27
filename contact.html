@@ -9,7 +9,7 @@
 </head>
 <body class="bg-gray-50 text-gray-900 antialiased">
 
-    <!-- MENU YA JUU (NAVBAR - Inafanana kabisa na kurasa nyingine) -->
+    <!-- MENU YA JUU (NAVBAR) -->
     <nav class="bg-orange-600 shadow-md sticky top-0 z-50 border-b border-orange-700">
         <div class="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between">
             <a href="index.html" class="flex items-center bg-white rounded-xl p-1 shadow-md">
@@ -26,18 +26,45 @@
         </div>
     </nav>
 
-    <!-- HEADER YA UKURASA -->
-    <header class="py-20 text-center bg-white border-b border-gray-100">
-        <div class="max-w-3xl mx-auto px-6 space-y-3">
-            <span class="text-orange-600 font-bold uppercase text-xs tracking-wider bg-orange-50 px-4 py-1.5 rounded-full inline-block">
-                Tupo Hapa kwa Ajili Yako
-            </span>
-            <h1 class="text-3xl md:text-5xl font-black uppercase tracking-tight">Wasiliana Nasi</h1>
-            <div class="h-1 w-16 bg-orange-600 mx-auto rounded-full"></div>
-            <p class="text-gray-500 text-sm md:text-base max-w-xl mx-auto leading-relaxed pt-2">
-                Je, una maswali, maoni, au ungependa kushirikiana na Nyanyuka Afrika Foundation? Timu yetu ya Makao Makuu ipo tayari kukujibu.
-            </p>
+    <!-- SEHEMU YA HEADER: BACKGROUND SLIDESHOW -->
+    <header class="relative w-full h-[45vh] md:h-[50vh] bg-gray-950 overflow-hidden">
+        
+        <!-- PICHA YA SLIDE 1 -->
+        <div class="slide-item absolute inset-0 opacity-100 transition-opacity duration-1000 ease-in-out">
+            <img src="picha2.jpg" alt="Wasiliana Nasi" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-orange-950/40 to-black/70 flex items-center justify-center text-center p-6">
+                <div class="max-w-3xl space-y-3">
+                    <span class="inline-block bg-orange-600 text-white font-bold text-xs uppercase px-4 py-1.5 rounded-full tracking-wider border border-orange-500">
+                        Tupo Hapa kwa Ajili Yako
+                    </span>
+                    <h1 class="text-3xl md:text-5xl font-black text-white uppercase tracking-tight leading-tight">
+                        Wasiliana <span class="text-orange-400">Nasi</span>
+                    </h1>
+                    <p class="text-gray-200 text-sm md:text-base max-w-xl mx-auto leading-relaxed">
+                        Je, una maswali, maoni, au ungependa kushirikiana na Nyanyuka Afrika Foundation? Timu yetu ipo tayari kukujibu.
+                    </p>
+                </div>
+            </div>
         </div>
+
+        <!-- PICHA YA SLIDE 2 -->
+        <div class="slide-item absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out">
+            <img src="uzinduziziara.jpg" alt="Ofisi za Dodoma" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-orange-950/40 to-black/70 flex items-center justify-center text-center p-6">
+                <div class="max-w-3xl space-y-3">
+                    <span class="inline-block bg-orange-600 text-white font-bold text-xs uppercase px-4 py-1.5 rounded-full tracking-wider border border-orange-500">
+                        Makao Makuu - Dodoma
+                    </span>
+                    <h1 class="text-3xl md:text-5xl font-black text-white uppercase tracking-tight leading-tight">
+                        Timu Yetu <span class="text-orange-400">Ipo Tayari</span>
+                    </h1>
+                    <p class="text-gray-200 text-sm md:text-base max-w-xl mx-auto leading-relaxed">
+                        Tusemezane, tushirikiane na tujenge jamii yenye ustawi na maendeleo endelevu.
+                    </p>
+                </div>
+            </div>
+        </div>
+
     </header>
 
     <!-- SEHEMU KUU YA MAWASILIANO (CONTACT MAIN CONTENT) -->
@@ -160,6 +187,28 @@
     <footer class="py-8 bg-orange-950 text-center text-xs text-orange-200 border-t border-orange-900">
         &copy; 2026 Nyanyuka Afrika Foundation. Dodoma, Tanzania. All Rights Reserved.
     </footer>
+
+    <!-- JAVASCRIPT YA KUENDESHA SLIDE ZA BACKGROUND -->
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide-item');
+        
+        function showNextSlide() {
+            if(slides.length === 0) return;
+            slides[currentSlide].classList.remove('opacity-100');
+            slides[currentSlide].classList.add('opacity-0');
+            
+            currentSlide = (currentSlide + 1) % slides.length;
+            
+            slides[currentSlide].classList.remove('opacity-0');
+            slides[currentSlide].classList.add('opacity-100');
+        }
+        
+        setInterval(showNextSlide, 5000); // Inabadilisha picha kila baada ya sekunde 5
+    </script>
+
+</body>
+</html>
 
 </body>
 </html>
