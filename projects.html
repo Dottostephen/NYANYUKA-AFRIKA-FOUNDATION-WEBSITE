@@ -10,9 +10,8 @@
 <body class="bg-gray-50 text-gray-900 antialiased">
 
     <!-- MENU YA JUU (NAVBAR) - Inabaki juu ya pop-up zote daima (z-50) -->
-    <nav class="bg-orange-600 shadow-md sticky top-0 z-50 border-b border-orange-700 h-24">
-        <div class="max-w-7xl mx-auto px-6 h-full flex items-center justify-between">
-            <!-- Logo (Kadi Nyeupe) na Jina -->
+  <nav class="bg-orange-600 shadow-md sticky top-0 z-50 border-b border-orange-700">
+        <div class="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between">
             <a href="index.html" class="flex items-center gap-4 group">
                 <div class="bg-white rounded-xl p-1.5 shadow-md flex items-center justify-center">
                     <img src="logo.png" alt="Logo" class="h-16 w-auto object-contain">
@@ -22,8 +21,12 @@
                 </span>
             </a>
             
+            <button id="menu-btn" class="lg:hidden text-white text-2xl focus:outline-none cursor-pointer p-2">
+                <i id="menu-icon" class="fa-solid fa-bars"></i>
+            </button>
+            
             <div class="hidden lg:flex items-center gap-5 text-[13px] font-bold uppercase text-white">
-                <a href="index.html" class="bg-orange-800 px-4 py-2 rounded-lg transition">Home</a>
+                <a href="index.html" class="hover:bg-orange-700 px-4 py-2 rounded-lg transition">Home</a>
                 <a href="about.html" class="hover:bg-orange-700 px-4 py-2 rounded-lg transition">About Us</a>
                 <a href="management.html" class="hover:bg-orange-700 px-4 py-2 rounded-lg transition">Management</a>
                 <a href="projects.html" class="hover:bg-orange-700 px-4 py-2 rounded-lg transition">Projects</a>
@@ -31,6 +34,16 @@
                 <a href="contact.html" class="hover:bg-orange-700 px-4 py-2 rounded-lg transition">Contact</a>
                 <a href="donation.html" class="bg-white text-orange-600 px-6 py-2.5 rounded-full hover:bg-orange-800 hover:text-white transition shadow-md">Donate</a>
             </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden lg:hidden bg-orange-700 border-t border-orange-800 px-6 py-4 space-y-3 font-bold uppercase text-sm text-white transition-all duration-300">
+            <a href="index.html" class="block hover:bg-orange-800 p-2 rounded">Home</a>
+            <a href="about.html" class="block hover:bg-orange-800 p-2 rounded">About Us</a>
+            <a href="management.html" class="block hover:bg-orange-800 p-2 rounded">Management</a>
+            <a href="projects.html" class="block hover:bg-orange-800 p-2 rounded">Projects</a>
+            <a href="news.html" class="block hover:bg-orange-800 p-2 rounded">News & Updates</a>
+            <a href="contact.html" class="block hover:bg-orange-800 p-2 rounded">Contact</a>
+            <a href="donation.html" class="block bg-white text-orange-600 text-center p-3 rounded-xl mt-4 shadow font-black">Donate</a>
         </div>
     </nav>
 
