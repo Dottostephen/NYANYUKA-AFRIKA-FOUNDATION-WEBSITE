@@ -9,7 +9,7 @@
 </head>
 <body class="bg-gray-50 text-gray-900 antialiased">
 
-    <!-- MENU YA JUU (NAVBAR) - Imewekewa z-50 ili ibaki juu ya pop-up zote daima -->
+    <!-- MENU YA JUU (NAVBAR) - Inabaki juu ya pop-up zote daima (z-50) -->
     <nav class="bg-orange-600 shadow-md sticky top-0 z-50 border-b border-orange-700 h-24">
         <div class="max-w-7xl mx-auto px-6 h-full flex items-center justify-between">
             <!-- Logo (Kadi Nyeupe) na Jina -->
@@ -93,7 +93,7 @@
                     </div>
                     <h3 class="text-2xl font-black uppercase tracking-tight text-gray-950">Uhifadhi wa Mazingira</h3>
                     <p class="text-gray-600 text-sm leading-relaxed">
-                        Tunashughulikia changamoto za mabadiliko ya tabianchi kwa vitendo nchini Tanzania. Kupitia kampeni zetu maarufu za <strong class="text-orange-600">"Ziara Yangu, Mti Wangu"</strong> na <strong class="text-orange-600">"Shitaka Urithi Mazingira"</strong>, tunahamasisha upandaji miti endelevu, utunzaji wa vyanzo vya maji na usafishaji wa mazingira.
+                        Tunashughulikia changamoto za mabadiliko ya tabianchi kwa vitendo nchini Tanzania. Kupitia kampeni zetu za <strong class="text-orange-600">"Ziara Yangu, Mti Wangu"</strong> na <strong class="text-orange-600">"Shitaka Urithi Mazingira"</strong>, tunahamasisha upandaji miti endelevu na utunzaji wa mazingira.
                     </p>
                     <div class="pt-2 text-orange-600 font-bold text-xs uppercase flex items-center gap-2">
                         Soma Miradi Iliyotekelezwa <span class="group-hover:translate-x-1 transition-transform">&rarr;</span>
@@ -141,7 +141,7 @@
                     </div>
                     <h3 class="text-2xl font-black uppercase tracking-tight text-gray-950">Maendeleo ya Jamii</h3>
                     <p class="text-gray-600 text-sm leading-relaxed">
-                        Tunasimamia midahalo, makongamano na mafunzo maalum. Pia shirika linashiriki kikamilifu kutoa huduma za itifaki (protocol services) kwenye matukio mbalimbali na kushirikiana kwa karibu na Serikali pamoja na wadau kuleta ustawi wa jamii.
+                        Tunasimamia midahalo, makongamano na mafunzo maalum. Kupitia jukwaa letu la <strong class="text-orange-600">"Wito Wa Kunyanyuka"</strong> tunajenga jamii yenye fikra chanya na yenye kuchukua hatua za kimaendeleo kwa vitendo.
                     </p>
                     <div class="pt-2 text-orange-600 font-bold text-xs uppercase flex items-center gap-2">
                         Soma Miradi Iliyotekelezwa <span class="group-hover:translate-x-1 transition-transform">&rarr;</span>
@@ -152,104 +152,149 @@
         </div>
     </main>
 
-    <!-- ========================================================
-         MADIRISHA YA POP-UP (MODALS) - Zote zina top-[96px] na z-30
-         Hii inamaanisha zitaanza chini ya Navbar na kutoifunika menu
-         ======================================================== -->
+    <!-- =================================================================
+         MADIRISHA YA POP-UP YA SKRINI NZIMA (FULL SCREEN MODALS)
+         Inajaza skrini yote kuanzia chini ya Navbar (top-[96px] na z-40)
+         ================================================================= -->
 
     <!-- POP-UP 1: UHIFADHI WA MAZINGIRA -->
-    <div id="modal-mazingira" class="fixed top-[96px] bottom-0 left-0 right-0 bg-gray-950/40 backdrop-blur-xs flex items-center justify-center hidden z-30 p-4">
-        <div class="bg-white rounded-3xl max-w-3xl w-full max-h-[80vh] overflow-y-auto shadow-2xl space-y-6 p-6 md:p-8 relative border border-gray-100">
-            <div class="flex justify-between items-start border-b border-gray-100 pb-4 sticky top-0 bg-white z-10">
+    <div id="modal-mazingira" class="fixed top-[96px] bottom-0 left-0 right-0 bg-white hidden z-40 overflow-y-auto">
+        <div class="max-w-5xl mx-auto px-6 py-12 space-y-10">
+            <!-- Kichwa cha Pop-up -->
+            <div class="flex justify-between items-center border-b border-gray-100 pb-6">
                 <div>
                     <span class="text-xs font-bold uppercase tracking-wider text-orange-600 bg-orange-50 px-3 py-1 rounded-full">Sekta ya Mazingira</span>
-                    <h3 class="text-2xl font-black text-gray-950 mt-1">MIRADI ILIYOTEKELEZWA</h3>
+                    <h2 class="text-3xl font-black text-gray-950 uppercase tracking-tight mt-2">MIRADI ILIYOTEKELEZWA</h2>
                 </div>
-                <button id="funga-mazingira" class="text-gray-400 hover:text-gray-700 bg-gray-50 hover:bg-gray-100 p-2 rounded-full transition text-xl w-10 h-10 flex items-center justify-center">&times;</button>
+                <button id="funga-mazingira" class="text-gray-400 hover:text-gray-700 bg-gray-100 hover:bg-gray-200 p-3 rounded-full transition text-2xl w-12 h-12 flex items-center justify-center font-bold shadow-xs">&times;</button>
             </div>
-            <div class="space-y-8 divide-y divide-gray-100">
-                <!-- Project 1 -->
-                <div class="pt-2 first:pt-0 space-y-3">
-                    <div class="flex items-center gap-2 text-orange-600 font-bold text-lg">
-                        <span class="bg-orange-600 text-white w-6 h-6 rounded-md flex items-center justify-center text-xs">1</span>
-                        <h4>Ziara Yangu Mti Wangu</h4>
+
+            <!-- Maudhui ya Miradi ya Mazingira -->
+            <div class="space-y-12 divide-y divide-gray-100">
+                
+                <!-- Mradi wa 1 -->
+                <div class="space-y-4 pt-2 first:pt-0">
+                    <div class="flex items-center gap-3 text-orange-600 font-black text-xl uppercase tracking-tight">
+                        <span class="bg-orange-600 text-white w-8 h-8 rounded-lg flex items-center justify-center text-sm">1</span>
+                        <h3>Ziara Yangu Mti Wangu</h3>
                     </div>
-                    <p class="text-gray-600 text-sm leading-relaxed">
+                    <p class="text-gray-700 text-base leading-relaxed">
                         Kampeni hii inalenga kuhamasisha viongozi wa serikali, taasisi binafsi, dini, watu binafsi na watu wa kawaida kupanda mti au miti katika kila ziara zao. Kauli mbiu ya kampeni hii ni <strong>Alama na Ukijanishaji</strong>. Ulizinduliwa na Mkuu wa Wilaya ya Dodoma Mh. Dkt Alhaj Jabir Musa Shekimweri tarehe 07/12/2024.
                     </p>
-                    <div class="bg-gray-50 p-4 rounded-2xl text-xs text-gray-700 space-y-1 border border-gray-100">
-                        <p><strong>Mafanikio ya mradi:</strong> Umepanda miti 700 Msangalalee Mashariki (Dodoma Makulu), shule ya Kato Victory miti 500, Kisasa Sekondari miti 100, na maeneo mengine Dodoma Mjini. Jumla ya miti 2,000 imepandwa. Mradi umepewa barua ya pongezi kutoka ofisi ya DC Dodoma na umepata kibali kufanyika mashuleni kutoka TAMISEMI.</p>
+                    <div class="bg-orange-50/60 p-5 rounded-2xl text-sm text-gray-800 border border-orange-100 shadow-xs">
+                        <p class="leading-relaxed"><strong>Marekebisho na Mafanikio ya Mradi:</strong> Mradi umetekelezwa kwa kupanda miti 700 Msangalalee Mashariki kata ya D/Makulu Mkoa wa Dodoma, shule ya Kato Victory miti 500, Kisasa Sekondari miti 100, na maeneo mengine Dodoma Mjini; jumla ya <strong>miti 2,000 imepandwa</strong>. Mradi huu umepewa barua ya pongezi na kutambuliwa kutoka ofisi ya Mkuu wa Wilaya ya Dodoma na umepata kibali kufanyika mashuleni kutoka ofisi ya Waziri Mkuu-TAMISEMI.</p>
+                    </div>
+                    <!-- Sehemu ya Picha za Mradi 1 -->
+                    <div class="grid sm:grid-cols-2 gap-4 pt-2">
+                        <div class="bg-gray-100 border border-gray-200 rounded-2xl h-48 flex flex-col items-center justify-center text-center p-4 text-gray-500 hover:bg-gray-200/70 transition">
+                            <i class="fa-solid fa-image text-3xl mb-2 text-orange-400"></i>
+                            <span class="font-bold text-xs uppercase">Picha 1</span>
+                            <span class="text-xs text-gray-400 mt-1">Wananchi wakiitikia kupanda miti</span>
+                        </div>
+                        <div class="bg-gray-100 border border-gray-200 rounded-2xl h-48 flex flex-col items-center justify-center text-center p-4 text-gray-500 hover:bg-gray-200/70 transition">
+                            <i class="fa-solid fa-image text-3xl mb-2 text-orange-400"></i>
+                            <span class="font-bold text-xs uppercase">Picha 2</span>
+                            <span class="text-xs text-gray-400 mt-1">Wanafunzi Kato wakishiriki upandaji miti</span>
+                        </div>
                     </div>
                 </div>
-                <!-- Project 3 -->
-                <div class="pt-6 space-y-3">
-                    <div class="flex items-center gap-2 text-orange-600 font-bold text-lg">
-                        <span class="bg-orange-600 text-white w-6 h-6 rounded-md flex items-center justify-center text-xs">2</span>
-                        <h4>Shitaka Urithi Mazingira</h4>
+
+                <!-- Mradi wa 2 (Shitaka Urithi Mazingira) -->
+                <div class="space-y-4 pt-10">
+                    <div class="flex items-center gap-3 text-orange-600 font-black text-xl uppercase tracking-tight">
+                        <span class="bg-orange-600 text-white w-8 h-8 rounded-lg flex items-center justify-center text-sm">2</span>
+                        <h3>Shitaka Urithi Mazingira</h3>
                     </div>
-                    <p class="text-gray-600 text-sm leading-relaxed">
-                        Ni mradi unalenga kukabiliana na uharibifu wa mazingira kwa kutatua changamoto za kimazingira na mabadiliko ya hali ya hewa kwa lengo la kurithisha kizazi kijacho mazingira salama. Limefanyika zoezi la usafi la kuondoa madampo yasiyo rasmi katika mtaa wa Msangalalee Mashariki tarehe 14/02/2026.
+                    <p class="text-gray-700 text-base leading-relaxed">
+                        Ni mradi unaolenga kukabiliana na uharibifu wa mazingira kwa kutatua changamoto za kimazingira na mabadiliko ya hali ya hewa kwa lengo la kurithisha kizazi kijacho mazingira salama. Katika kukabiliana na uharibifu wa mazingira, limefanyika zoezi la usafi la kuondoa madampo yasiyo rasmi mawili katika mtaa wa Msangalalee Mashariki kata ya Dodoma Makulu Tarehe 14/02/2026.
                     </p>
+                    <!-- Unaweza kuongeza picha za mradi huu hapa chini zikipatikana -->
+                    <div class="bg-gray-50 p-4 rounded-xl border border-gray-200 text-xs text-gray-500 flex items-center gap-2">
+                        <i class="fa-solid fa-info-circle text-orange-500"></i>
+                        <span>Zoezi hili lilihusisha wananchi na mabalozi wa mazingira katika kuondoa taka ngumu kwenye makazi.</span>
+                    </div>
                 </div>
+
             </div>
         </div>
     </div>
 
     <!-- POP-UP 2: MSAADA WA KISHERIA -->
-    <div id="modal-sheria" class="fixed top-[96px] bottom-0 left-0 right-0 bg-gray-950/40 backdrop-blur-xs flex items-center justify-center hidden z-30 p-4">
-        <div class="bg-white rounded-3xl max-w-3xl w-full max-h-[80vh] overflow-y-auto shadow-2xl space-y-6 p-6 md:p-8 relative border border-gray-100">
-            <div class="flex justify-between items-start border-b border-gray-100 pb-4 sticky top-0 bg-white z-10">
+    <div id="modal-sheria" class="fixed top-[96px] bottom-0 left-0 right-0 bg-white hidden z-40 overflow-y-auto">
+        <div class="max-w-5xl mx-auto px-6 py-12 space-y-10">
+            <div class="flex justify-between items-center border-b border-gray-100 pb-6">
                 <div>
                     <span class="text-xs font-bold uppercase tracking-wider text-orange-600 bg-orange-50 px-3 py-1 rounded-full">Sheria & Uraia</span>
-                    <h3 class="text-2xl font-black text-gray-950 mt-1">HAKI NA MSAADA WA KISHERIA</h3>
+                    <h2 class="text-3xl font-black text-gray-950 uppercase tracking-tight mt-2">HAKI NA MSAADA WA KISHERIA</h2>
                 </div>
-                <button id="funga-sheria" class="text-gray-400 hover:text-gray-700 bg-gray-50 hover:bg-gray-100 p-2 rounded-full transition text-xl w-10 h-10 flex items-center justify-center">&times;</button>
+                <button id="funga-sheria" class="text-gray-400 hover:text-gray-700 bg-gray-100 hover:bg-gray-200 p-3 rounded-full transition text-2xl w-12 h-12 flex items-center justify-center font-bold shadow-xs">&times;</button>
             </div>
-            <div class="space-y-4 text-gray-600 text-sm leading-relaxed">
+            <div class="space-y-6 text-gray-700 text-base leading-relaxed">
                 <p>Kitengo hiki kinatoa huduma za ushauri, utetezi na elimu ya sheria kwa jamii. Tunalenga kuhakikisha kwamba makundi yote yenye mahitaji maalum na wale wasiojiweza wanapata msaada wa kisheria bila malipo yoyote.</p>
-                <div class="bg-orange-50/50 p-4 rounded-2xl border border-orange-100 text-xs space-y-1">
-                    <p><strong>Maeneo ya Kazi:</strong> Elimu ya Katiba, Msaada wa kisheria kwa wanawake na watoto, na utatuzi wa migogoro ya kijamii kisheria.</p>
+                <div class="bg-orange-50/50 p-6 rounded-2xl border border-orange-100 text-sm space-y-2">
+                    <p><strong>Maeneo Makuu ya Utekelezaji:</strong></p>
+                    <ul class="list-disc pl-5 space-y-1 text-gray-600">
+                        <li>Kutoa elimu ya Katiba na Haki za Binadamu vijijini na mijini.</li>
+                        <li>Msaada wa kisheria wa bure kwa wanawake na watoto waliofanyiwa ukatili.</li>
+                        <li>Ushauri wa kisheria katika utatuzi wa migogoro ya ardhi na kijamii.</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- POP-UP 3: UWEZESHAJI KIUCHUMI -->
-    <div id="modal-uchumi" class="fixed top-[96px] bottom-0 left-0 right-0 bg-gray-950/40 backdrop-blur-xs flex items-center justify-center hidden z-30 p-4">
-        <div class="bg-white rounded-3xl max-w-3xl w-full max-h-[80vh] overflow-y-auto shadow-2xl space-y-6 p-6 md:p-8 relative border border-gray-100">
-            <div class="flex justify-between items-start border-b border-gray-100 pb-4 sticky top-0 bg-white z-10">
+    <div id="modal-uchumi" class="fixed top-[96px] bottom-0 left-0 right-0 bg-white hidden z-40 overflow-y-auto">
+        <div class="max-w-5xl mx-auto px-6 py-12 space-y-10">
+            <div class="flex justify-between items-center border-b border-gray-100 pb-6">
                 <div>
                     <span class="text-xs font-bold uppercase tracking-wider text-orange-600 bg-orange-50 px-3 py-1 rounded-full">Uchumi & Biashara</span>
-                    <h3 class="text-2xl font-black text-gray-950 mt-1">UWEZESHAJI WA KIUCHUMI</h3>
+                    <h2 class="text-3xl font-black text-gray-950 uppercase tracking-tight mt-2">UWEZESHAJI WA KIUCHUMI</h2>
                 </div>
-                <button id="funga-uchumi" class="text-gray-400 hover:text-gray-700 bg-gray-50 hover:bg-gray-100 p-2 rounded-full transition text-xl w-10 h-10 flex items-center justify-center">&times;</button>
+                <button id="funga-uchumi" class="text-gray-400 hover:text-gray-700 bg-gray-100 hover:bg-gray-200 p-3 rounded-full transition text-2xl w-12 h-12 flex items-center justify-center font-bold shadow-xs">&times;</button>
             </div>
-            <div class="space-y-4 text-gray-600 text-sm leading-relaxed">
-                <p>Tunajenga uwezo wa kiuchumi kupitia mafunzo ya kibiashara, usimamizi wa fedha, na kuanzisha vikundi vya ujasiriamali ili kuwasaidia vijana na wanawake kujikwamua kiuchumi na kuongeza tija ya uzalishaji.</p>
+            <div class="space-y-6 text-gray-700 text-base leading-relaxed">
+                <p>Tunajenga uwezo wa kiuchumi kupitia mafunzo ya kibiashara, usimamizi wa fedha, na kuanzisha vikundi vya ujasiriamali ili kuwasaidia vijana na wanawake kujikwamua kiuchumi na kuongeza tija ya uzalishaji viwandani na kilimoni.</p>
+                <p>Kupitia mitandao yetu ya kibiashara, tunawakutanisha wazalishaji wadogo na masoko makubwa ya ndani na nje ya nchi ili kukuza pato la Mtanzania mmoja mmoja.</p>
             </div>
         </div>
     </div>
 
     <!-- POP-UP 4: MAENDELEO YA JAMII -->
-    <div id="modal-jamii" class="fixed top-[96px] bottom-0 left-0 right-0 bg-gray-950/40 backdrop-blur-xs flex items-center justify-center hidden z-30 p-4">
-        <div class="bg-white rounded-3xl max-w-3xl w-full max-h-[80vh] overflow-y-auto shadow-2xl space-y-6 p-6 md:p-8 relative border border-gray-100">
-            <div class="flex justify-between items-start border-b border-gray-100 pb-4 sticky top-0 bg-white z-10">
+    <div id="modal-jamii" class="fixed top-[96px] bottom-0 left-0 right-0 bg-white hidden z-40 overflow-y-auto">
+        <div class="max-w-5xl mx-auto px-6 py-12 space-y-10">
+            <div class="flex justify-between items-center border-b border-gray-100 pb-6">
                 <div>
                     <span class="text-xs font-bold uppercase tracking-wider text-orange-600 bg-orange-50 px-3 py-1 rounded-full">Ustawi wa Jamii</span>
-                    <h3 class="text-2xl font-black text-gray-950 mt-1">MIDAHALO NA MAENDELEO</h3>
+                    <h2 class="text-3xl font-black text-gray-950 uppercase tracking-tight mt-2">MIDAHALO NA MAENDELEO</h2>
                 </div>
-                <button id="funga-jamii" class="text-gray-400 hover:text-gray-700 bg-gray-50 hover:bg-gray-100 p-2 rounded-full transition text-xl w-10 h-10 flex items-center justify-center">&times;</button>
+                <button id="funga-jamii" class="text-gray-400 hover:text-gray-700 bg-gray-100 hover:bg-gray-200 p-3 rounded-full transition text-2xl w-12 h-12 flex items-center justify-center font-bold shadow-xs">&times;</button>
             </div>
-            <div class="space-y-6 divide-y divide-gray-100">
-                <!-- Project 2 -->
-                <div class="pt-2 first:pt-0 space-y-3">
-                    <div class="flex items-center gap-2 text-orange-600 font-bold text-lg">
-                        <span class="bg-orange-600 text-white w-6 h-6 rounded-md flex items-center justify-center text-xs">1</span>
-                        <h4>Wito Wa Kunyanyuka - Chukua Hatua Sasa</h4>
+            
+            <div class="space-y-8">
+                <!-- Mradi wa Wito wa Kunyanyuka -->
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3 text-orange-600 font-black text-xl uppercase tracking-tight">
+                        <span class="bg-orange-600 text-white w-8 h-8 rounded-lg flex items-center justify-center text-sm">1</span>
+                        <h3>Wito Wa Kunyanyuka - Chukua Hatua Sasa</h3>
                     </div>
-                    <p class="text-gray-600 text-sm leading-relaxed">
-                        Ni jukwaa la Uhamasishaji lenye lengo la kuamsha ari na fikra Chanya kwa watanzania hasa vijana na wanawake. Mradi unatekelezwa kwa kuwa na mada na kufanyika katika panel, debate, makongamano na mtandaoni. Umetekelezwa Dodoma mjini kwa kuwa na mdahalo wa wafanyakazi na mabalozi wa taasisi tarehe 15/01/2026.
+                    <p class="text-gray-700 text-base leading-relaxed">
+                        Ni jukwaa la Uhamasishaji lenye lengo la kuamsha ari na fikra Chanya kwa watanzania hasa vijana na wanawake. Mradi unatekelezwa kwa kuwa na mada na kufanyika katika panel, debate, makongamano na mtandaoni. Mradi umetekelezwa Dodoma mjini kwa kuwa na mdahalo wa wafanyakazi wa shirika, marafiki na mabalozi wa Nyanyuka Afrika Foundation, Tarehe 15/01/2026.
                     </p>
+                    
+                    <!-- Sehemu ya Picha za Mradi wa Jamii -->
+                    <div class="grid sm:grid-cols-2 gap-4 pt-2">
+                        <div class="bg-gray-100 border border-gray-200 rounded-2xl h-48 flex flex-col items-center justify-center text-center p-4 text-gray-500 hover:bg-gray-200/70 transition">
+                            <i class="fa-solid fa-image text-3xl mb-2 text-orange-400"></i>
+                            <span class="font-bold text-xs uppercase">Picha 1</span>
+                            <span class="text-xs text-gray-400 mt-1">C.E.O akifungua mdahalo</span>
+                        </div>
+                        <div class="bg-gray-100 border border-gray-200 rounded-2xl h-48 flex flex-col items-center justify-center text-center p-4 text-gray-500 hover:bg-gray-200/70 transition">
+                            <i class="fa-solid fa-image text-3xl mb-2 text-orange-400"></i>
+                            <span class="font-bold text-xs uppercase">Picha 2</span>
+                            <span class="text-xs text-gray-400 mt-1">Mtoa mada akichangia mdahalo</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -323,7 +368,7 @@
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             
-            // Kazi ya kuongoza Pop-up zote
+            // Kazi ya kuongoza Pop-up zote kuwa Full Screen
             function fanyaModal(idKadi, idModal, idFunga) {
                 const kadi = document.getElementById(idKadi);
                 const modal = document.getElementById(idModal);
@@ -333,18 +378,13 @@
 
                 kadi.addEventListener('click', () => {
                     modal.classList.remove('hidden');
-                    // Inazuia body isitembee lakini inaacha dashboard ionekane vizuri
+                    document.body.style.overflow = 'hidden'; // Inazuia ukurasa mkuu usitembee kwa nyuma
                 });
 
                 funga.addEventListener('click', (e) => {
                     e.stopPropagation();
                     modal.classList.add('hidden');
-                });
-
-                modal.addEventListener('click', (e) => {
-                    if (e.target === modal) {
-                        modal.classList.add('hidden');
-                    }
+                    document.body.style.overflow = ''; // Inaruhusu ukurasa mkuu utembee tena
                 });
             }
 
