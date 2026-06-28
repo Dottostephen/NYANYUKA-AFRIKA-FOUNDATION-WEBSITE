@@ -47,6 +47,17 @@
         </div>
     </nav>
 
+        <div id="mobile-menu" class="hidden lg:hidden bg-orange-700 border-t border-orange-800 px-6 py-4 space-y-3 font-bold uppercase text-sm text-white transition-all duration-300">
+            <a href="index.html" class="block hover:bg-orange-800 p-2 rounded">Home</a>
+            <a href="about.html" class="block hover:bg-orange-800 p-2 rounded">About Us</a>
+            <a href="management.html" class="block hover:bg-orange-800 p-2 rounded">Management</a>
+            <a href="projects.html" class="block hover:bg-orange-800 p-2 rounded">Projects</a>
+            <a href="news.html" class="block hover:bg-orange-800 p-2 rounded">News & Updates</a>
+            <a href="contact.html" class="block hover:bg-orange-800 p-2 rounded">Contact</a>
+            <a href="donation.html" class="block bg-white text-orange-600 text-center p-3 rounded-xl mt-4 shadow font-black">Donate</a>
+        </div>
+    </nav>
+
     <!-- SEHEMU YA HERO: BACKGROUND SLIDESHOW -->
     <header class="relative w-full h-[85vh] md:h-[90vh] bg-gray-950 overflow-hidden">
         
@@ -478,8 +489,7 @@
         if (targetSection) {
             observer.observe(targetSection);
         }
-    </script>
-        // Script ya kufungua na kufunga menyu kwenye simu
+ <script>
         const menuBtn = document.getElementById('menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
         const menuIcon = document.getElementById('menu-icon');
