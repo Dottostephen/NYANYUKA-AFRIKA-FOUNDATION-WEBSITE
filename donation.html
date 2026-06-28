@@ -75,7 +75,6 @@
 
     <!-- NJIA ZA KUCHANGIA (DONATION OPTIONS) -->
     <main class="max-w-7xl mx-auto px-6 py-16">
-        <!-- Grid imebadilishwa kuwa 3 columns kwenye skrini kubwa ili kadi zikae tatu sambamba -->
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 items-start">
             
             <!-- KADI YA 1: KADI YA BENKI (ONLINE CREDIT/DEBIT CARD) -->
@@ -111,10 +110,11 @@
                     <button type="button" onclick="makePayment()" class="w-full bg-orange-600 text-white font-bold text-xs uppercase py-4 rounded-xl hover:bg-orange-700 transition tracking-wider shadow-md cursor-pointer flex items-center justify-center gap-2">
                         <i class="fa-solid fa-shield-halved"></i> Lipa Salama Sasa
                     </button>
-                    <div class="flex items-center justify-center gap-4 text-gray-400 text-lg border-t border-gray-100 pt-3">
-                        <i class="fa-brands fa-cc-visa"></i>
-                        <i class="fa-brands fa-cc-mastercard"></i>
-                        <span class="text-[10px] font-bold uppercase tracking-widest text-gray-400">Secured via Flutterwave</span>
+                    <!-- Nembo Zenye Rangi Zake Halisi (Visa & Mastercard) -->
+                    <div class="flex items-center justify-center gap-4 border-t border-gray-100 pt-3">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="Visa" class="h-5 w-auto object-contain">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Mastercard" class="h-6 w-auto object-contain">
+                        <span class="text-[9px] font-black uppercase tracking-widest text-gray-400 border-l border-gray-200 pl-4">Secured by Flutterwave</span>
                     </div>
                 </div>
             </div>
@@ -132,8 +132,14 @@
                         </div>
                     </div>
                     
-                    <div class="p-5 bg-gray-50 rounded-2xl border border-gray-200/60 space-y-3">
-                        <span class="text-xs font-black text-sky-600 block tracking-widest uppercase">NMB BANK</span>
+                    <div class="p-5 bg-gray-50 rounded-2xl border border-gray-200/60 space-y-3 relative overflow-hidden">
+                        <!-- Nembo ya NMB yenye Rangi yake halisi ya Kichungwa/Buluu upande wa juu kulia -->
+                        <div class="absolute top-4 right-4 flex items-center gap-1 bg-white px-2 py-1 rounded-md shadow-2xs border border-gray-100">
+                            <span class="text-[10px] font-black text-[#0056B3]">NMB</span>
+                            <span class="w-2 h-2 rounded-full bg-[#FF6700]"></span>
+                        </div>
+
+                        <span class="text-xs font-black text-sky-700 block tracking-widest uppercase">NMB BANK PLC</span>
                         
                         <div class="space-y-2.5 text-xs font-bold uppercase tracking-wide text-gray-700">
                             <div class="grid grid-cols-3 gap-1">
@@ -222,7 +228,7 @@
         function makePayment() {
             const kiasi = document.getElementById('piga-kiasi').value;
             const baruaPepe = document.getElementById('piga-email').value;
-            const jina Kamili = document.getElementById('piga-jina').value || "Mchangiaji wa Nyanyuka";
+            const jinaKamili = document.getElementById('piga-jina').value || "Mchangiaji wa Nyanyuka";
 
             if (!baruaPepe) {
                 alert("Tafadhali jaza barua pepe (Email) yako ili kupokea risiti.");
@@ -246,12 +252,12 @@
                 customizations: {
                     title: "Nyanyuka Afrika Foundation",
                     description: "Mchango wa Maendeleo ya Jamii na Mazingira",
-                    logo: "https://nyanyukaafrika.org/logo.png", // Weka link ya logo yako halisi mtandaoni
+                    logo: "https://nyanyukaafrika.org/logo.png", 
                 },
                 callback: function (data) {
                     console.log("Malipo yamefanikiwa:", data);
                     alert("Asante sana! Mchango wako umepokelewa kwa usalama.");
-                    window.location.href = "index.html"; // Mteja anarudishwa nyumbani
+                    window.location.href = "index.html"; 
                 },
                 onclose: function() {
                     console.log("Mtumiaji amefunga dirisha la malipo.");
