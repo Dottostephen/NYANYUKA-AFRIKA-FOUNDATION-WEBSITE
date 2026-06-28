@@ -110,7 +110,6 @@
                     <button type="button" onclick="makePayment()" class="w-full bg-orange-600 text-white font-bold text-xs uppercase py-4 rounded-xl hover:bg-orange-700 transition tracking-wider shadow-md cursor-pointer flex items-center justify-center gap-2">
                         <i class="fa-solid fa-shield-halved"></i> Lipa Salama Sasa
                     </button>
-                    <!-- Nembo Zenye Rangi Zake Halisi (Visa & Mastercard) -->
                     <div class="flex items-center justify-center gap-4 border-t border-gray-100 pt-3">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="Visa" class="h-5 w-auto object-contain">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Mastercard" class="h-6 w-auto object-contain">
@@ -133,7 +132,6 @@
                     </div>
                     
                     <div class="p-5 bg-gray-50 rounded-2xl border border-gray-200/60 space-y-3 relative overflow-hidden">
-                        <!-- Nembo ya NMB yenye Rangi yake halisi ya Kichungwa/Buluu upande wa juu kulia -->
                         <div class="absolute top-4 right-4 flex items-center gap-1 bg-white px-2 py-1 rounded-md shadow-2xs border border-gray-100">
                             <span class="text-[10px] font-black text-[#0056B3]">NMB</span>
                             <span class="w-2 h-2 rounded-full bg-[#FF6700]"></span>
@@ -167,7 +165,7 @@
                 </div>
             </div>
 
-            <!-- KADI YA 3: WEKA AHADI (PLEDGE FORM) -->
+            <!-- KADI YA 3: WEKA AHADI (PLEDGE FORM - FILLED CONTEXT WITH WEB3FORMS) -->
             <div class="border border-gray-200/60 shadow-xs rounded-3xl p-6 bg-white border-t-4 border-t-orange-600 h-full">
                 <div class="flex items-center gap-3 mb-6">
                     <div class="w-12 h-12 bg-orange-50 rounded-2xl flex items-center justify-center text-orange-600 text-xl shrink-0">
@@ -179,23 +177,32 @@
                     </div>
                 </div>
 
-                <form action="#" class="space-y-3.5">
+                <!-- Fomu inatuma taarifa kupitia Web3forms kwenda kwenye barua pepe yako rasmi -->
+                <form action="https://api.web3forms.com/submit" method="POST" class="space-y-3.5">
+                    
+                    <!-- Tokeni maalum iliyounganishwa na nyanyukaafrikafoundation@gmail.com -->
+                    <input type="hidden" name="access_key" value="0fb079b7-3b2d-4076-a4c3-1ef67e231154">
+                    <input type="hidden" name="subject" value="AHADI MPYA - TOVUTI YA NYANYUKA AFRIKA">
+                    <input type="hidden" name="from_name" value="Nyanyuka Afrika Portal">
+                    <!-- Baada ya kutuma, itamrudisha kwenye ukurasa huu huu -->
+                    <input type="hidden" name="redirect" value="https://nyanyukaafrika.org/donation.html">
+
                     <div>
                         <label class="block text-[10px] font-bold uppercase text-gray-500 mb-1 tracking-wide">Jina Kamili</label>
-                        <input type="text" required placeholder="Mf. Juma Hamis" class="w-full px-4 py-2.5 text-xs rounded-xl border border-gray-200 focus:outline-none focus:border-orange-500 bg-gray-50/50">
+                        <input type="text" name="Jina_Kamili" required placeholder="Mf. Juma Hamis" class="w-full px-4 py-2.5 text-xs rounded-xl border border-gray-200 focus:outline-none focus:border-orange-500 bg-gray-50/50">
                     </div>
                     <div>
                         <label class="block text-[10px] font-bold uppercase text-gray-500 mb-1 tracking-wide">Namba ya Simu</label>
-                        <input type="tel" required placeholder="Mf. 0659XXXXXX" class="w-full px-4 py-2.5 text-xs rounded-xl border border-gray-200 focus:outline-none focus:border-orange-500 bg-gray-50/50">
+                        <input type="tel" name="Namba_ya_Simu" required placeholder="Mf. 0659XXXXXX" class="w-full px-4 py-2.5 text-xs rounded-xl border border-gray-200 focus:outline-none focus:border-orange-500 bg-gray-50/50">
                     </div>
                     <div>
                         <label class="block text-[10px] font-bold uppercase text-gray-500 mb-1 tracking-wide">Aina ya Ahadi</label>
-                        <select required class="w-full px-4 py-2.5 text-xs rounded-xl border border-gray-200 bg-white focus:outline-none focus:border-orange-500 text-gray-600 font-medium">
-                            <option>Fedha Taslimu (Njia ya Benki)</option>
-                            <option>Miti / Vifaa vya Uhifadhi Mazingira</option>
-                            <option>Vifaa vya Shule au Elimu</option>
-                            <option>Misaada ya Kibinadamu na Sheria</option>
-                            <option>Nyinginezo</option>
+                        <select name="Aina_ya_Ahadi" required class="w-full px-4 py-2.5 text-xs rounded-xl border border-gray-200 bg-white focus:outline-none focus:border-orange-500 text-gray-600 font-medium">
+                            <option value="Fedha Taslimu (Njia ya Benki)">Fedha Taslimu (Njia ya Benki)</option>
+                            <option value="Miti / Vifaa vya Uhifadhi Mazingira">Miti / Vifaa vya Uhifadhi Mazingira</option>
+                            <option value="Vifaa vya Shule au Elimu">Vifaa vya Shule au Elimu</option>
+                            <option value="Misaada ya Kibinadamu na Sheria">Misaada ya Kibinadamu na Sheria</option>
+                            <option value="Nyinginezo">Nyinginezo</option>
                         </select>
                     </div>
                     <button type="submit" class="w-full bg-orange-600 text-white font-bold text-xs uppercase py-4 rounded-xl hover:bg-orange-700 transition tracking-wider shadow-md cursor-pointer">
