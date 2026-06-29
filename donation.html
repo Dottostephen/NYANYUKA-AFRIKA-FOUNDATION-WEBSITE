@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nyanyuka Afrika Foundation | Nyumbani</title>
+    <title>Nyanyuka Afrika Foundation | Donation</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link class="text-orange-600" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body class="bg-gray-50 text-gray-900 antialiased">
 
@@ -16,7 +16,6 @@
                 <div class="bg-white rounded-xl p-1.5 shadow-md flex items-center justify-center shrink-0">
                     <img src="logo.png" alt="Logo" class="h-14 sm:h-16 w-auto object-contain">
                 </div>
-                <!-- HAPA NDIPO PALIPOREKEBISHWA ILI LIONEKANE KWENYE SIMU -->
                 <span class="inline-block font-black text-white text-xs sm:text-base md:text-lg tracking-wider uppercase max-w-[160px] sm:max-w-none leading-tight">
                     NYANYUKA AFRIKA FOUNDATION
                 </span>
@@ -47,9 +46,6 @@
             <a href="donation.html" class="block bg-white text-orange-600 text-center p-3 rounded-xl mt-4 shadow font-black">Donate</a>
         </div>
     </nav>
-
-</body>
-</html>
 
     <!-- SEHEMU YA HEADER: BACKGROUND SLIDESHOW -->
     <header class="relative w-full h-[50vh] md:h-[55vh] bg-gray-950 overflow-hidden">
@@ -182,7 +178,7 @@
                 </div>
             </div>
 
-            <!-- KADI YA 3: WEKA AHADI (PLEDGE FORM - FILLED CONTEXT WITH WEB3FORMS) -->
+            <!-- KADI YA 3: WEKA AHADI (PLEDGE FORM) -->
             <div class="border border-gray-200/60 shadow-xs rounded-3xl p-6 bg-white border-t-4 border-t-orange-600 h-full">
                 <div class="flex items-center gap-3 mb-6">
                     <div class="w-12 h-12 bg-orange-50 rounded-2xl flex items-center justify-center text-orange-600 text-xl shrink-0">
@@ -194,14 +190,10 @@
                     </div>
                 </div>
 
-                <!-- Fomu inatuma taarifa kupitia Web3forms kwenda kwenye barua pepe yako rasmi -->
                 <form action="https://api.web3forms.com/submit" method="POST" class="space-y-3.5">
-                    
-                    <!-- Tokeni maalum iliyounganishwa na nyanyukaafrikafoundation@gmail.com -->
                     <input type="hidden" name="access_key" value="0fb079b7-3b2d-4076-a4c3-1ef67e231154">
                     <input type="hidden" name="subject" value="AHADI MPYA - TOVUTI YA NYANYUKA AFRIKA">
                     <input type="hidden" name="from_name" value="Nyanyuka Afrika Portal">
-                    <!-- Baada ya kutuma, itamrudisha kwenye ukurasa huu huu -->
                     <input type="hidden" name="redirect" value="https://nyanyukaafrika.org/donation.html">
 
                     <div>
@@ -304,7 +296,8 @@
             slides[currentSlide].classList.add('opacity-100');
         }
         setInterval(showNextSlide, 5000);
-  <script>
+
+        // HAMBURG MENU (MOBILE NAVIGATION)
         const menuBtn = document.getElementById('menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
         const menuIcon = document.getElementById('menu-icon');
